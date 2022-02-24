@@ -1,0 +1,17 @@
+Quartus II Archive log --	C:/New folder/LAB1_5/L1P5_restored/output_files/Jain-5204308-L01P05.qarlog
+
+Archive:	C:/New folder/LAB1_5/L1P5_restored/output_files/Jain-5204308-L01P05.qar
+Date:		Thu Sep 24 21:02:49 2020
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/New folder/LAB1_5/L1P5_restored/L1P5.qpf
+C:/New folder/LAB1_5/L1P5_restored/L1P5.qsf
+C:/New folder/LAB1_5/L1P5_restored/L1P5.vhd
+C:/New folder/LAB1_5/L1P5_restored/L1P5.vwf
+C:/New folder/LAB1_5/L1P5_restored/assignment_defaults.qdf
+C:/New folder/LAB1_5/L1P5_restored/incremental_db/compiled_partitions/L1P5.db_info
+	======= Total: 6 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

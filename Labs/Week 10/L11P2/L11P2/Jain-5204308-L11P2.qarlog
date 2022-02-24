@@ -1,0 +1,22 @@
+Quartus II Archive log --	C:/Labs/Week 10/L11P2/L11P2/Jain-5204308-L11P2.qarlog
+
+Archive:	C:/Labs/Week 10/L11P2/L11P2/Jain-5204308-L11P2.qar
+Date:		Mon Nov 23 21:59:05 2020
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Labs/Week 10/L11P2/L11P2/L11P2.qpf
+C:/Labs/Week 10/L11P2/L11P2/L11P2.qsf
+C:/Labs/Week 10/L11P2/L11P2/L11P2.vhd
+C:/Labs/Week 10/L11P2/L11P2/L11P2.vwf
+C:/Labs/Week 10/L11P2/L11P2/assignment_defaults.qdf
+C:/Labs/Week 10/L11P2/L11P2/db/L11P2.sim.vwf
+C:/Labs/Week 10/L11P2/L11P2/incremental_db/compiled_partitions/L11P2.db_info
+C:/Labs/Week 10/L11P2/L11P2/memory_block.cmp
+C:/Labs/Week 10/L11P2/L11P2/memory_block.qip
+C:/Labs/Week 10/L11P2/L11P2/memory_block.vhd
+C:/Labs/Week 10/L11P2/L11P2/my_array.mif
+	======= Total: 11 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

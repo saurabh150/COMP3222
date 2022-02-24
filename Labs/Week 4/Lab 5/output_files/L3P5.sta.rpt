@@ -1,0 +1,1210 @@
+TimeQuest Timing Analyzer report for L3P5
+Mon Oct 12 16:08:39 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'Flag'
+ 12. Slow Model Setup: 'KEY[1]'
+ 13. Slow Model Hold: 'KEY[1]'
+ 14. Slow Model Hold: 'Flag'
+ 15. Slow Model Minimum Pulse Width: 'KEY[1]'
+ 16. Slow Model Minimum Pulse Width: 'Flag'
+ 17. Setup Times
+ 18. Hold Times
+ 19. Clock to Output Times
+ 20. Minimum Clock to Output Times
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Fast Model Setup Summary
+ 24. Fast Model Hold Summary
+ 25. Fast Model Recovery Summary
+ 26. Fast Model Removal Summary
+ 27. Fast Model Minimum Pulse Width Summary
+ 28. Fast Model Setup: 'Flag'
+ 29. Fast Model Setup: 'KEY[1]'
+ 30. Fast Model Hold: 'KEY[1]'
+ 31. Fast Model Hold: 'Flag'
+ 32. Fast Model Minimum Pulse Width: 'KEY[1]'
+ 33. Fast Model Minimum Pulse Width: 'Flag'
+ 34. Setup Times
+ 35. Hold Times
+ 36. Clock to Output Times
+ 37. Minimum Clock to Output Times
+ 38. Propagation Delay
+ 39. Minimum Propagation Delay
+ 40. Multicorner Timing Analysis Summary
+ 41. Setup Times
+ 42. Hold Times
+ 43. Clock to Output Times
+ 44. Minimum Clock to Output Times
+ 45. Progagation Delay
+ 46. Minimum Progagation Delay
+ 47. Setup Transfers
+ 48. Hold Transfers
+ 49. Report TCCS
+ 50. Report RSKM
+ 51. Unconstrained Paths
+ 52. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; L3P5                                                              ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C20F484C7                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                             ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets    ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+; Flag       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Flag }   ;
+; KEY[1]     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { KEY[1] } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                                                   ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 1443.0 MHz ; 405.02 MHz      ; KEY[1]     ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++---------------------------------+
+; Slow Model Setup Summary        ;
++--------+--------+---------------+
+; Clock  ; Slack  ; End Point TNS ;
++--------+--------+---------------+
+; Flag   ; -3.726 ; -51.280       ;
+; KEY[1] ; 0.307  ; 0.000         ;
++--------+--------+---------------+
+
+
++---------------------------------+
+; Slow Model Hold Summary         ;
++--------+--------+---------------+
+; Clock  ; Slack  ; End Point TNS ;
++--------+--------+---------------+
+; KEY[1] ; -3.787 ; -6.719        ;
+; Flag   ; 3.472  ; 0.000         ;
++--------+--------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++--------+--------+----------------------+
+; Clock  ; Slack  ; End Point TNS        ;
++--------+--------+----------------------+
+; KEY[1] ; -1.469 ; -3.913               ;
+; Flag   ; 0.500  ; 0.000                ;
++--------+--------+----------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'Flag'                                                                                 ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; -3.726 ; F         ; HEX3[3]$latch ; KEY[1]       ; Flag        ; 0.500        ; -1.483     ; 1.554      ;
+; -3.699 ; F         ; HEX2[1]$latch ; KEY[1]       ; Flag        ; 0.500        ; -1.449     ; 1.565      ;
+; -3.680 ; F         ; HEX3[1]$latch ; KEY[1]       ; Flag        ; 0.500        ; -1.474     ; 1.498      ;
+; -3.672 ; F         ; HEX3[5]$latch ; KEY[1]       ; Flag        ; 0.500        ; -1.482     ; 1.553      ;
+; -3.670 ; F         ; HEX3[6]$latch ; KEY[1]       ; Flag        ; 0.500        ; -1.484     ; 1.549      ;
+; -3.665 ; F         ; HEX2[4]$latch ; KEY[1]       ; Flag        ; 0.500        ; -1.450     ; 1.570      ;
+; -3.660 ; F         ; HEX2[6]$latch ; KEY[1]       ; Flag        ; 0.500        ; -1.449     ; 1.566      ;
+; -3.659 ; F         ; HEX2[0]$latch ; KEY[1]       ; Flag        ; 0.500        ; -1.474     ; 1.500      ;
+; -3.658 ; F         ; HEX2[2]$latch ; KEY[1]       ; Flag        ; 0.500        ; -1.451     ; 1.561      ;
+; -3.650 ; F         ; HEX3[0]$latch ; KEY[1]       ; Flag        ; 0.500        ; -1.504     ; 1.500      ;
+; -3.649 ; F         ; HEX2[5]$latch ; KEY[1]       ; Flag        ; 0.500        ; -1.499     ; 1.505      ;
+; -3.646 ; F         ; HEX2[3]$latch ; KEY[1]       ; Flag        ; 0.500        ; -1.501     ; 1.500      ;
+; -3.625 ; F         ; HEX3[2]$latch ; KEY[1]       ; Flag        ; 0.500        ; -1.475     ; 1.504      ;
+; -3.621 ; F         ; HEX3[4]$latch ; KEY[1]       ; Flag        ; 0.500        ; -1.474     ; 1.501      ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'KEY[1]'                                                                        ;
++-------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; 0.307 ; F         ; F       ; KEY[1]       ; KEY[1]      ; 1.000        ; 0.000      ; 0.731      ;
+; 3.184 ; Flag      ; F       ; Flag         ; KEY[1]      ; 0.500        ; 4.161      ; 1.792      ;
+; 3.684 ; Flag      ; F       ; Flag         ; KEY[1]      ; 1.000        ; 4.161      ; 1.792      ;
+; 4.039 ; Flag      ; Flag    ; Flag         ; KEY[1]      ; 0.500        ; 3.955      ; 0.731      ;
+; 4.539 ; Flag      ; Flag    ; Flag         ; KEY[1]      ; 1.000        ; 3.955      ; 0.731      ;
++-------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'KEY[1]'                                                                          ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; -3.787 ; Flag      ; Flag    ; Flag         ; KEY[1]      ; 0.000        ; 3.955      ; 0.731      ;
+; -3.287 ; Flag      ; Flag    ; Flag         ; KEY[1]      ; -0.500       ; 3.955      ; 0.731      ;
+; -2.932 ; Flag      ; F       ; Flag         ; KEY[1]      ; 0.000        ; 4.161      ; 1.792      ;
+; -2.432 ; Flag      ; F       ; Flag         ; KEY[1]      ; -0.500       ; 4.161      ; 1.792      ;
+; 0.445  ; F         ; F       ; KEY[1]       ; KEY[1]      ; 0.000        ; 0.000      ; 0.731      ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'Flag'                                                                                 ;
++-------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; 3.472 ; F         ; HEX3[1]$latch ; KEY[1]       ; Flag        ; -0.500       ; -1.474     ; 1.498      ;
+; 3.474 ; F         ; HEX2[0]$latch ; KEY[1]       ; Flag        ; -0.500       ; -1.474     ; 1.500      ;
+; 3.475 ; F         ; HEX3[4]$latch ; KEY[1]       ; Flag        ; -0.500       ; -1.474     ; 1.501      ;
+; 3.479 ; F         ; HEX3[2]$latch ; KEY[1]       ; Flag        ; -0.500       ; -1.475     ; 1.504      ;
+; 3.501 ; F         ; HEX2[3]$latch ; KEY[1]       ; Flag        ; -0.500       ; -1.501     ; 1.500      ;
+; 3.504 ; F         ; HEX2[5]$latch ; KEY[1]       ; Flag        ; -0.500       ; -1.499     ; 1.505      ;
+; 3.504 ; F         ; HEX3[0]$latch ; KEY[1]       ; Flag        ; -0.500       ; -1.504     ; 1.500      ;
+; 3.512 ; F         ; HEX2[2]$latch ; KEY[1]       ; Flag        ; -0.500       ; -1.451     ; 1.561      ;
+; 3.514 ; F         ; HEX2[1]$latch ; KEY[1]       ; Flag        ; -0.500       ; -1.449     ; 1.565      ;
+; 3.515 ; F         ; HEX2[6]$latch ; KEY[1]       ; Flag        ; -0.500       ; -1.449     ; 1.566      ;
+; 3.520 ; F         ; HEX2[4]$latch ; KEY[1]       ; Flag        ; -0.500       ; -1.450     ; 1.570      ;
+; 3.533 ; F         ; HEX3[6]$latch ; KEY[1]       ; Flag        ; -0.500       ; -1.484     ; 1.549      ;
+; 3.535 ; F         ; HEX3[5]$latch ; KEY[1]       ; Flag        ; -0.500       ; -1.482     ; 1.553      ;
+; 3.537 ; F         ; HEX3[3]$latch ; KEY[1]       ; Flag        ; -0.500       ; -1.483     ; 1.554      ;
++-------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'KEY[1]'                                                         ;
++--------+--------------+----------------+------------------+--------+------------+----------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target         ;
++--------+--------------+----------------+------------------+--------+------------+----------------+
+; -1.469 ; 1.000        ; 2.469          ; Port Rate        ; KEY[1] ; Rise       ; KEY[1]         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; KEY[1] ; Rise       ; F              ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; KEY[1] ; Rise       ; F              ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; KEY[1] ; Rise       ; Flag           ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; KEY[1] ; Rise       ; Flag           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[1] ; Rise       ; Flag|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[1] ; Rise       ; Flag|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[1] ; Rise       ; F|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[1] ; Rise       ; F|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[1] ; Rise       ; KEY[1]|combout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[1] ; Rise       ; KEY[1]|combout ;
++--------+--------------+----------------+------------------+--------+------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'Flag'                                                                ;
++-------+--------------+----------------+------------------+-------+------------+-----------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                ;
++-------+--------------+----------------+------------------+-------+------------+-----------------------+
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; Flag|regout           ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; Flag|regout           ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; Flag~clkctrl|inclk[0] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; Flag~clkctrl|inclk[0] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; Flag~clkctrl|outclk   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; Flag~clkctrl|outclk   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[0]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[0]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[0]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[0]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[1]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[1]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[1]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[1]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[2]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[2]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[2]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[2]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[3]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[3]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[3]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[3]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[4]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[4]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[4]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[4]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[5]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[5]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[5]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[5]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[6]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[6]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[6]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[6]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[0]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[0]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[0]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[0]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[1]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[1]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[1]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[1]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[2]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[2]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[2]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[2]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[3]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[3]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[3]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[3]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[4]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[4]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[4]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[4]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[5]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[5]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[5]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[5]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[6]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[6]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[6]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[6]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX2[0]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX2[0]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX2[0]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX2[0]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX2[1]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX2[1]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX2[1]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX2[1]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX2[2]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX2[2]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX2[2]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX2[2]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX2[3]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX2[3]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX2[3]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX2[3]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX2[4]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX2[4]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX2[4]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX2[4]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX2[5]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX2[5]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX2[5]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX2[5]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX2[6]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX2[6]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX2[6]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX2[6]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX3[0]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX3[0]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX3[0]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX3[0]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX3[1]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX3[1]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX3[1]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX3[1]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX3[2]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX3[2]$latch         ;
++-------+--------------+----------------+------------------+-------+------------+-----------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; SW[*]     ; Flag       ; 3.962 ; 3.962 ; Rise       ; Flag            ;
+;  SW[0]    ; Flag       ; 3.962 ; 3.962 ; Rise       ; Flag            ;
+;  SW[1]    ; Flag       ; 3.629 ; 3.629 ; Rise       ; Flag            ;
+;  SW[2]    ; Flag       ; 3.330 ; 3.330 ; Rise       ; Flag            ;
+;  SW[3]    ; Flag       ; 3.526 ; 3.526 ; Rise       ; Flag            ;
+;  SW[4]    ; Flag       ; 3.426 ; 3.426 ; Rise       ; Flag            ;
+;  SW[5]    ; Flag       ; 3.554 ; 3.554 ; Rise       ; Flag            ;
+;  SW[6]    ; Flag       ; 3.195 ; 3.195 ; Rise       ; Flag            ;
+;  SW[7]    ; Flag       ; 2.596 ; 2.596 ; Rise       ; Flag            ;
+; SW[*]     ; Flag       ; 4.701 ; 4.701 ; Fall       ; Flag            ;
+;  SW[0]    ; Flag       ; 4.701 ; 4.701 ; Fall       ; Flag            ;
+;  SW[1]    ; Flag       ; 4.351 ; 4.351 ; Fall       ; Flag            ;
+;  SW[2]    ; Flag       ; 4.027 ; 4.027 ; Fall       ; Flag            ;
+;  SW[3]    ; Flag       ; 4.236 ; 4.236 ; Fall       ; Flag            ;
+;  SW[4]    ; Flag       ; 4.206 ; 4.206 ; Fall       ; Flag            ;
+;  SW[5]    ; Flag       ; 4.336 ; 4.336 ; Fall       ; Flag            ;
+;  SW[6]    ; Flag       ; 3.983 ; 3.983 ; Fall       ; Flag            ;
+;  SW[7]    ; Flag       ; 3.384 ; 3.384 ; Fall       ; Flag            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; SW[*]     ; Flag       ; -1.264 ; -1.264 ; Rise       ; Flag            ;
+;  SW[0]    ; Flag       ; -2.698 ; -2.698 ; Rise       ; Flag            ;
+;  SW[1]    ; Flag       ; -2.313 ; -2.313 ; Rise       ; Flag            ;
+;  SW[2]    ; Flag       ; -2.028 ; -2.028 ; Rise       ; Flag            ;
+;  SW[3]    ; Flag       ; -2.226 ; -2.226 ; Rise       ; Flag            ;
+;  SW[4]    ; Flag       ; -2.110 ; -2.110 ; Rise       ; Flag            ;
+;  SW[5]    ; Flag       ; -2.244 ; -2.244 ; Rise       ; Flag            ;
+;  SW[6]    ; Flag       ; -1.854 ; -1.854 ; Rise       ; Flag            ;
+;  SW[7]    ; Flag       ; -1.264 ; -1.264 ; Rise       ; Flag            ;
+; SW[*]     ; Flag       ; -1.428 ; -1.428 ; Fall       ; Flag            ;
+;  SW[0]    ; Flag       ; -3.171 ; -3.171 ; Fall       ; Flag            ;
+;  SW[1]    ; Flag       ; -2.840 ; -2.840 ; Fall       ; Flag            ;
+;  SW[2]    ; Flag       ; -2.509 ; -2.509 ; Fall       ; Flag            ;
+;  SW[3]    ; Flag       ; -2.699 ; -2.699 ; Fall       ; Flag            ;
+;  SW[4]    ; Flag       ; -2.274 ; -2.274 ; Fall       ; Flag            ;
+;  SW[5]    ; Flag       ; -2.408 ; -2.408 ; Fall       ; Flag            ;
+;  SW[6]    ; Flag       ; -2.018 ; -2.018 ; Fall       ; Flag            ;
+;  SW[7]    ; Flag       ; -1.428 ; -1.428 ; Fall       ; Flag            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; Flag       ; 6.508 ; 6.508 ; Rise       ; Flag            ;
+;  HEX0[0]  ; Flag       ; 6.469 ; 6.469 ; Rise       ; Flag            ;
+;  HEX0[1]  ; Flag       ; 6.309 ; 6.309 ; Rise       ; Flag            ;
+;  HEX0[2]  ; Flag       ; 6.302 ; 6.302 ; Rise       ; Flag            ;
+;  HEX0[3]  ; Flag       ; 6.508 ; 6.508 ; Rise       ; Flag            ;
+;  HEX0[4]  ; Flag       ; 6.304 ; 6.304 ; Rise       ; Flag            ;
+;  HEX0[5]  ; Flag       ; 6.312 ; 6.312 ; Rise       ; Flag            ;
+;  HEX0[6]  ; Flag       ; 6.309 ; 6.309 ; Rise       ; Flag            ;
+; HEX1[*]   ; Flag       ; 6.533 ; 6.533 ; Rise       ; Flag            ;
+;  HEX1[0]  ; Flag       ; 6.478 ; 6.478 ; Rise       ; Flag            ;
+;  HEX1[1]  ; Flag       ; 5.939 ; 5.939 ; Rise       ; Flag            ;
+;  HEX1[2]  ; Flag       ; 5.932 ; 5.932 ; Rise       ; Flag            ;
+;  HEX1[3]  ; Flag       ; 6.142 ; 6.142 ; Rise       ; Flag            ;
+;  HEX1[4]  ; Flag       ; 5.956 ; 5.956 ; Rise       ; Flag            ;
+;  HEX1[5]  ; Flag       ; 6.533 ; 6.533 ; Rise       ; Flag            ;
+;  HEX1[6]  ; Flag       ; 6.506 ; 6.506 ; Rise       ; Flag            ;
+; HEX2[*]   ; Flag       ; 6.683 ; 6.683 ; Fall       ; Flag            ;
+;  HEX2[0]  ; Flag       ; 6.634 ; 6.634 ; Fall       ; Flag            ;
+;  HEX2[1]  ; Flag       ; 6.412 ; 6.412 ; Fall       ; Flag            ;
+;  HEX2[2]  ; Flag       ; 6.683 ; 6.683 ; Fall       ; Flag            ;
+;  HEX2[3]  ; Flag       ; 6.648 ; 6.648 ; Fall       ; Flag            ;
+;  HEX2[4]  ; Flag       ; 6.441 ; 6.441 ; Fall       ; Flag            ;
+;  HEX2[5]  ; Flag       ; 6.616 ; 6.616 ; Fall       ; Flag            ;
+;  HEX2[6]  ; Flag       ; 6.448 ; 6.448 ; Fall       ; Flag            ;
+; HEX3[*]   ; Flag       ; 6.836 ; 6.836 ; Fall       ; Flag            ;
+;  HEX3[0]  ; Flag       ; 6.657 ; 6.657 ; Fall       ; Flag            ;
+;  HEX3[1]  ; Flag       ; 6.836 ; 6.836 ; Fall       ; Flag            ;
+;  HEX3[2]  ; Flag       ; 6.826 ; 6.826 ; Fall       ; Flag            ;
+;  HEX3[3]  ; Flag       ; 6.657 ; 6.657 ; Fall       ; Flag            ;
+;  HEX3[4]  ; Flag       ; 6.630 ; 6.630 ; Fall       ; Flag            ;
+;  HEX3[5]  ; Flag       ; 6.298 ; 6.298 ; Fall       ; Flag            ;
+;  HEX3[6]  ; Flag       ; 6.664 ; 6.664 ; Fall       ; Flag            ;
+; LEDG[*]   ; KEY[1]     ; 8.880 ; 8.880 ; Rise       ; KEY[1]          ;
+;  LEDG[1]  ; KEY[1]     ; 8.880 ; 8.880 ; Rise       ; KEY[1]          ;
+; LEDG[*]   ; KEY[1]     ; 8.880 ; 8.880 ; Fall       ; KEY[1]          ;
+;  LEDG[1]  ; KEY[1]     ; 8.880 ; 8.880 ; Fall       ; KEY[1]          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; Flag       ; 6.302 ; 6.302 ; Rise       ; Flag            ;
+;  HEX0[0]  ; Flag       ; 6.469 ; 6.469 ; Rise       ; Flag            ;
+;  HEX0[1]  ; Flag       ; 6.309 ; 6.309 ; Rise       ; Flag            ;
+;  HEX0[2]  ; Flag       ; 6.302 ; 6.302 ; Rise       ; Flag            ;
+;  HEX0[3]  ; Flag       ; 6.508 ; 6.508 ; Rise       ; Flag            ;
+;  HEX0[4]  ; Flag       ; 6.304 ; 6.304 ; Rise       ; Flag            ;
+;  HEX0[5]  ; Flag       ; 6.312 ; 6.312 ; Rise       ; Flag            ;
+;  HEX0[6]  ; Flag       ; 6.309 ; 6.309 ; Rise       ; Flag            ;
+; HEX1[*]   ; Flag       ; 5.932 ; 5.932 ; Rise       ; Flag            ;
+;  HEX1[0]  ; Flag       ; 6.478 ; 6.478 ; Rise       ; Flag            ;
+;  HEX1[1]  ; Flag       ; 5.939 ; 5.939 ; Rise       ; Flag            ;
+;  HEX1[2]  ; Flag       ; 5.932 ; 5.932 ; Rise       ; Flag            ;
+;  HEX1[3]  ; Flag       ; 6.142 ; 6.142 ; Rise       ; Flag            ;
+;  HEX1[4]  ; Flag       ; 5.956 ; 5.956 ; Rise       ; Flag            ;
+;  HEX1[5]  ; Flag       ; 6.533 ; 6.533 ; Rise       ; Flag            ;
+;  HEX1[6]  ; Flag       ; 6.506 ; 6.506 ; Rise       ; Flag            ;
+; HEX2[*]   ; Flag       ; 6.412 ; 6.412 ; Fall       ; Flag            ;
+;  HEX2[0]  ; Flag       ; 6.634 ; 6.634 ; Fall       ; Flag            ;
+;  HEX2[1]  ; Flag       ; 6.412 ; 6.412 ; Fall       ; Flag            ;
+;  HEX2[2]  ; Flag       ; 6.683 ; 6.683 ; Fall       ; Flag            ;
+;  HEX2[3]  ; Flag       ; 6.648 ; 6.648 ; Fall       ; Flag            ;
+;  HEX2[4]  ; Flag       ; 6.441 ; 6.441 ; Fall       ; Flag            ;
+;  HEX2[5]  ; Flag       ; 6.616 ; 6.616 ; Fall       ; Flag            ;
+;  HEX2[6]  ; Flag       ; 6.448 ; 6.448 ; Fall       ; Flag            ;
+; HEX3[*]   ; Flag       ; 6.298 ; 6.298 ; Fall       ; Flag            ;
+;  HEX3[0]  ; Flag       ; 6.657 ; 6.657 ; Fall       ; Flag            ;
+;  HEX3[1]  ; Flag       ; 6.836 ; 6.836 ; Fall       ; Flag            ;
+;  HEX3[2]  ; Flag       ; 6.826 ; 6.826 ; Fall       ; Flag            ;
+;  HEX3[3]  ; Flag       ; 6.657 ; 6.657 ; Fall       ; Flag            ;
+;  HEX3[4]  ; Flag       ; 6.630 ; 6.630 ; Fall       ; Flag            ;
+;  HEX3[5]  ; Flag       ; 6.298 ; 6.298 ; Fall       ; Flag            ;
+;  HEX3[6]  ; Flag       ; 6.664 ; 6.664 ; Fall       ; Flag            ;
+; LEDG[*]   ; KEY[1]     ; 8.880 ; 8.880 ; Rise       ; KEY[1]          ;
+;  LEDG[1]  ; KEY[1]     ; 8.880 ; 8.880 ; Rise       ; KEY[1]          ;
+; LEDG[*]   ; KEY[1]     ; 8.880 ; 8.880 ; Fall       ; KEY[1]          ;
+;  LEDG[1]  ; KEY[1]     ; 8.880 ; 8.880 ; Fall       ; KEY[1]          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; KEY[0]     ; LEDG[0]     ; 8.901 ;    ;    ; 8.901 ;
++------------+-------------+-------+----+----+-------+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; KEY[0]     ; LEDG[0]     ; 8.901 ;    ;    ; 8.901 ;
++------------+-------------+-------+----+----+-------+
+
+
++---------------------------------+
+; Fast Model Setup Summary        ;
++--------+--------+---------------+
+; Clock  ; Slack  ; End Point TNS ;
++--------+--------+---------------+
+; Flag   ; -1.030 ; -14.123       ;
+; KEY[1] ; 0.665  ; 0.000         ;
++--------+--------+---------------+
+
+
++---------------------------------+
+; Fast Model Hold Summary         ;
++--------+--------+---------------+
+; Clock  ; Slack  ; End Point TNS ;
++--------+--------+---------------+
+; KEY[1] ; -1.822 ; -3.321        ;
+; Flag   ; 1.592  ; 0.000         ;
++--------+--------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++--------+--------+----------------------+
+; Clock  ; Slack  ; End Point TNS        ;
++--------+--------+----------------------+
+; KEY[1] ; -1.222 ; -3.222               ;
+; Flag   ; 0.500  ; 0.000                ;
++--------+--------+----------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'Flag'                                                                                 ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; -1.030 ; F         ; HEX3[1]$latch ; KEY[1]       ; Flag        ; 0.500        ; -0.485     ; 0.630      ;
+; -1.029 ; F         ; HEX2[5]$latch ; KEY[1]       ; Flag        ; 0.500        ; -0.502     ; 0.636      ;
+; -1.024 ; F         ; HEX3[0]$latch ; KEY[1]       ; Flag        ; 0.500        ; -0.504     ; 0.628      ;
+; -1.021 ; F         ; HEX2[3]$latch ; KEY[1]       ; Flag        ; 0.500        ; -0.503     ; 0.627      ;
+; -1.014 ; F         ; HEX2[0]$latch ; KEY[1]       ; Flag        ; 0.500        ; -0.485     ; 0.627      ;
+; -1.012 ; F         ; HEX3[6]$latch ; KEY[1]       ; Flag        ; 0.500        ; -0.492     ; 0.632      ;
+; -1.011 ; F         ; HEX3[3]$latch ; KEY[1]       ; Flag        ; 0.500        ; -0.491     ; 0.615      ;
+; -1.009 ; F         ; HEX3[2]$latch ; KEY[1]       ; Flag        ; 0.500        ; -0.485     ; 0.632      ;
+; -1.006 ; F         ; HEX3[4]$latch ; KEY[1]       ; Flag        ; 0.500        ; -0.485     ; 0.629      ;
+; -1.005 ; F         ; HEX2[6]$latch ; KEY[1]       ; Flag        ; 0.500        ; -0.470     ; 0.644      ;
+; -0.994 ; F         ; HEX2[1]$latch ; KEY[1]       ; Flag        ; 0.500        ; -0.470     ; 0.622      ;
+; -0.992 ; F         ; HEX3[5]$latch ; KEY[1]       ; Flag        ; 0.500        ; -0.490     ; 0.616      ;
+; -0.991 ; F         ; HEX2[4]$latch ; KEY[1]       ; Flag        ; 0.500        ; -0.472     ; 0.628      ;
+; -0.985 ; F         ; HEX2[2]$latch ; KEY[1]       ; Flag        ; 0.500        ; -0.472     ; 0.621      ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'KEY[1]'                                                                        ;
++-------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; 0.665 ; F         ; F       ; KEY[1]       ; KEY[1]      ; 1.000        ; 0.000      ; 0.367      ;
+; 1.879 ; Flag      ; F       ; Flag         ; KEY[1]      ; 0.500        ; 2.022      ; 0.816      ;
+; 2.202 ; Flag      ; Flag    ; Flag         ; KEY[1]      ; 0.500        ; 1.896      ; 0.367      ;
+; 2.379 ; Flag      ; F       ; Flag         ; KEY[1]      ; 1.000        ; 2.022      ; 0.816      ;
+; 2.702 ; Flag      ; Flag    ; Flag         ; KEY[1]      ; 1.000        ; 1.896      ; 0.367      ;
++-------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'KEY[1]'                                                                          ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; -1.822 ; Flag      ; Flag    ; Flag         ; KEY[1]      ; 0.000        ; 1.896      ; 0.367      ;
+; -1.499 ; Flag      ; F       ; Flag         ; KEY[1]      ; 0.000        ; 2.022      ; 0.816      ;
+; -1.322 ; Flag      ; Flag    ; Flag         ; KEY[1]      ; -0.500       ; 1.896      ; 0.367      ;
+; -0.999 ; Flag      ; F       ; Flag         ; KEY[1]      ; -0.500       ; 2.022      ; 0.816      ;
+; 0.215  ; F         ; F       ; KEY[1]       ; KEY[1]      ; 0.000        ; 0.000      ; 0.367      ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'Flag'                                                                                 ;
++-------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; 1.592 ; F         ; HEX2[1]$latch ; KEY[1]       ; Flag        ; -0.500       ; -0.470     ; 0.622      ;
+; 1.593 ; F         ; HEX2[2]$latch ; KEY[1]       ; Flag        ; -0.500       ; -0.472     ; 0.621      ;
+; 1.600 ; F         ; HEX2[4]$latch ; KEY[1]       ; Flag        ; -0.500       ; -0.472     ; 0.628      ;
+; 1.606 ; F         ; HEX3[5]$latch ; KEY[1]       ; Flag        ; -0.500       ; -0.490     ; 0.616      ;
+; 1.606 ; F         ; HEX3[3]$latch ; KEY[1]       ; Flag        ; -0.500       ; -0.491     ; 0.615      ;
+; 1.612 ; F         ; HEX2[0]$latch ; KEY[1]       ; Flag        ; -0.500       ; -0.485     ; 0.627      ;
+; 1.614 ; F         ; HEX2[6]$latch ; KEY[1]       ; Flag        ; -0.500       ; -0.470     ; 0.644      ;
+; 1.614 ; F         ; HEX3[4]$latch ; KEY[1]       ; Flag        ; -0.500       ; -0.485     ; 0.629      ;
+; 1.615 ; F         ; HEX3[1]$latch ; KEY[1]       ; Flag        ; -0.500       ; -0.485     ; 0.630      ;
+; 1.617 ; F         ; HEX3[2]$latch ; KEY[1]       ; Flag        ; -0.500       ; -0.485     ; 0.632      ;
+; 1.624 ; F         ; HEX3[6]$latch ; KEY[1]       ; Flag        ; -0.500       ; -0.492     ; 0.632      ;
+; 1.630 ; F         ; HEX2[3]$latch ; KEY[1]       ; Flag        ; -0.500       ; -0.503     ; 0.627      ;
+; 1.632 ; F         ; HEX3[0]$latch ; KEY[1]       ; Flag        ; -0.500       ; -0.504     ; 0.628      ;
+; 1.638 ; F         ; HEX2[5]$latch ; KEY[1]       ; Flag        ; -0.500       ; -0.502     ; 0.636      ;
++-------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'KEY[1]'                                                         ;
++--------+--------------+----------------+------------------+--------+------------+----------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target         ;
++--------+--------------+----------------+------------------+--------+------------+----------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; KEY[1] ; Rise       ; KEY[1]         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; KEY[1] ; Rise       ; F              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; KEY[1] ; Rise       ; F              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; KEY[1] ; Rise       ; Flag           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; KEY[1] ; Rise       ; Flag           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[1] ; Rise       ; Flag|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[1] ; Rise       ; Flag|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[1] ; Rise       ; F|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[1] ; Rise       ; F|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY[1] ; Rise       ; KEY[1]|combout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY[1] ; Rise       ; KEY[1]|combout ;
++--------+--------------+----------------+------------------+--------+------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'Flag'                                                                ;
++-------+--------------+----------------+------------------+-------+------------+-----------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                ;
++-------+--------------+----------------+------------------+-------+------------+-----------------------+
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; Flag|regout           ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; Flag|regout           ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; Flag~clkctrl|inclk[0] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; Flag~clkctrl|inclk[0] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; Flag~clkctrl|outclk   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; Flag~clkctrl|outclk   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[0]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[0]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[0]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[0]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[1]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[1]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[1]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[1]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[2]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[2]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[2]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[2]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[3]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[3]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[3]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[3]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[4]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[4]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[4]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[4]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[5]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[5]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[5]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[5]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[6]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[6]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX0[6]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX0[6]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[0]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[0]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[0]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[0]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[1]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[1]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[1]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[1]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[2]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[2]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[2]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[2]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[3]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[3]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[3]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[3]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[4]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[4]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[4]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[4]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[5]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[5]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[5]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[5]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[6]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[6]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX1[6]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX1[6]$latch|datad   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX2[0]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX2[0]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX2[0]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX2[0]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX2[1]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX2[1]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX2[1]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX2[1]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX2[2]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX2[2]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX2[2]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX2[2]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX2[3]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX2[3]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX2[3]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX2[3]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX2[4]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX2[4]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX2[4]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX2[4]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX2[5]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX2[5]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX2[5]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX2[5]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX2[6]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX2[6]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX2[6]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX2[6]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX3[0]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX3[0]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX3[0]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX3[0]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX3[1]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX3[1]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Rise       ; HEX3[1]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Rise       ; HEX3[1]$latch|datac   ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; Flag  ; Fall       ; HEX3[2]$latch         ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; Flag  ; Fall       ; HEX3[2]$latch         ;
++-------+--------------+----------------+------------------+-------+------------+-----------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; SW[*]     ; Flag       ; 1.216 ; 1.216 ; Rise       ; Flag            ;
+;  SW[0]    ; Flag       ; 1.216 ; 1.216 ; Rise       ; Flag            ;
+;  SW[1]    ; Flag       ; 1.064 ; 1.064 ; Rise       ; Flag            ;
+;  SW[2]    ; Flag       ; 0.962 ; 0.962 ; Rise       ; Flag            ;
+;  SW[3]    ; Flag       ; 1.120 ; 1.120 ; Rise       ; Flag            ;
+;  SW[4]    ; Flag       ; 1.002 ; 1.002 ; Rise       ; Flag            ;
+;  SW[5]    ; Flag       ; 1.088 ; 1.088 ; Rise       ; Flag            ;
+;  SW[6]    ; Flag       ; 0.935 ; 0.935 ; Rise       ; Flag            ;
+;  SW[7]    ; Flag       ; 0.616 ; 0.616 ; Rise       ; Flag            ;
+; SW[*]     ; Flag       ; 1.466 ; 1.466 ; Fall       ; Flag            ;
+;  SW[0]    ; Flag       ; 1.466 ; 1.466 ; Fall       ; Flag            ;
+;  SW[1]    ; Flag       ; 1.313 ; 1.313 ; Fall       ; Flag            ;
+;  SW[2]    ; Flag       ; 1.211 ; 1.211 ; Fall       ; Flag            ;
+;  SW[3]    ; Flag       ; 1.366 ; 1.366 ; Fall       ; Flag            ;
+;  SW[4]    ; Flag       ; 1.276 ; 1.276 ; Fall       ; Flag            ;
+;  SW[5]    ; Flag       ; 1.362 ; 1.362 ; Fall       ; Flag            ;
+;  SW[6]    ; Flag       ; 1.209 ; 1.209 ; Fall       ; Flag            ;
+;  SW[7]    ; Flag       ; 0.890 ; 0.890 ; Fall       ; Flag            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; SW[*]     ; Flag       ; -0.149 ; -0.149 ; Rise       ; Flag            ;
+;  SW[0]    ; Flag       ; -0.769 ; -0.769 ; Rise       ; Flag            ;
+;  SW[1]    ; Flag       ; -0.610 ; -0.610 ; Rise       ; Flag            ;
+;  SW[2]    ; Flag       ; -0.507 ; -0.507 ; Rise       ; Flag            ;
+;  SW[3]    ; Flag       ; -0.669 ; -0.669 ; Rise       ; Flag            ;
+;  SW[4]    ; Flag       ; -0.539 ; -0.539 ; Rise       ; Flag            ;
+;  SW[5]    ; Flag       ; -0.629 ; -0.629 ; Rise       ; Flag            ;
+;  SW[6]    ; Flag       ; -0.471 ; -0.471 ; Rise       ; Flag            ;
+;  SW[7]    ; Flag       ; -0.149 ; -0.149 ; Rise       ; Flag            ;
+; SW[*]     ; Flag       ; -0.210 ; -0.210 ; Fall       ; Flag            ;
+;  SW[0]    ; Flag       ; -0.956 ; -0.956 ; Fall       ; Flag            ;
+;  SW[1]    ; Flag       ; -0.801 ; -0.801 ; Fall       ; Flag            ;
+;  SW[2]    ; Flag       ; -0.693 ; -0.693 ; Fall       ; Flag            ;
+;  SW[3]    ; Flag       ; -0.845 ; -0.845 ; Fall       ; Flag            ;
+;  SW[4]    ; Flag       ; -0.587 ; -0.587 ; Fall       ; Flag            ;
+;  SW[5]    ; Flag       ; -0.678 ; -0.678 ; Fall       ; Flag            ;
+;  SW[6]    ; Flag       ; -0.519 ; -0.519 ; Fall       ; Flag            ;
+;  SW[7]    ; Flag       ; -0.210 ; -0.210 ; Fall       ; Flag            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; Flag       ; 3.339 ; 3.339 ; Rise       ; Flag            ;
+;  HEX0[0]  ; Flag       ; 3.302 ; 3.302 ; Rise       ; Flag            ;
+;  HEX0[1]  ; Flag       ; 3.278 ; 3.278 ; Rise       ; Flag            ;
+;  HEX0[2]  ; Flag       ; 3.271 ; 3.271 ; Rise       ; Flag            ;
+;  HEX0[3]  ; Flag       ; 3.339 ; 3.339 ; Rise       ; Flag            ;
+;  HEX0[4]  ; Flag       ; 3.271 ; 3.271 ; Rise       ; Flag            ;
+;  HEX0[5]  ; Flag       ; 3.276 ; 3.276 ; Rise       ; Flag            ;
+;  HEX0[6]  ; Flag       ; 3.277 ; 3.277 ; Rise       ; Flag            ;
+; HEX1[*]   ; Flag       ; 3.352 ; 3.352 ; Rise       ; Flag            ;
+;  HEX1[0]  ; Flag       ; 3.322 ; 3.322 ; Rise       ; Flag            ;
+;  HEX1[1]  ; Flag       ; 3.116 ; 3.116 ; Rise       ; Flag            ;
+;  HEX1[2]  ; Flag       ; 3.115 ; 3.115 ; Rise       ; Flag            ;
+;  HEX1[3]  ; Flag       ; 3.184 ; 3.184 ; Rise       ; Flag            ;
+;  HEX1[4]  ; Flag       ; 3.136 ; 3.136 ; Rise       ; Flag            ;
+;  HEX1[5]  ; Flag       ; 3.352 ; 3.352 ; Rise       ; Flag            ;
+;  HEX1[6]  ; Flag       ; 3.338 ; 3.338 ; Rise       ; Flag            ;
+; HEX2[*]   ; Flag       ; 3.412 ; 3.412 ; Fall       ; Flag            ;
+;  HEX2[0]  ; Flag       ; 3.361 ; 3.361 ; Fall       ; Flag            ;
+;  HEX2[1]  ; Flag       ; 3.295 ; 3.295 ; Fall       ; Flag            ;
+;  HEX2[2]  ; Flag       ; 3.412 ; 3.412 ; Fall       ; Flag            ;
+;  HEX2[3]  ; Flag       ; 3.387 ; 3.387 ; Fall       ; Flag            ;
+;  HEX2[4]  ; Flag       ; 3.323 ; 3.323 ; Fall       ; Flag            ;
+;  HEX2[5]  ; Flag       ; 3.363 ; 3.363 ; Fall       ; Flag            ;
+;  HEX2[6]  ; Flag       ; 3.329 ; 3.329 ; Fall       ; Flag            ;
+; HEX3[*]   ; Flag       ; 3.524 ; 3.524 ; Fall       ; Flag            ;
+;  HEX3[0]  ; Flag       ; 3.382 ; 3.382 ; Fall       ; Flag            ;
+;  HEX3[1]  ; Flag       ; 3.524 ; 3.524 ; Fall       ; Flag            ;
+;  HEX3[2]  ; Flag       ; 3.521 ; 3.521 ; Fall       ; Flag            ;
+;  HEX3[3]  ; Flag       ; 3.387 ; 3.387 ; Fall       ; Flag            ;
+;  HEX3[4]  ; Flag       ; 3.367 ; 3.367 ; Fall       ; Flag            ;
+;  HEX3[5]  ; Flag       ; 3.247 ; 3.247 ; Fall       ; Flag            ;
+;  HEX3[6]  ; Flag       ; 3.396 ; 3.396 ; Fall       ; Flag            ;
+; LEDG[*]   ; KEY[1]     ; 4.744 ; 4.744 ; Rise       ; KEY[1]          ;
+;  LEDG[1]  ; KEY[1]     ; 4.744 ; 4.744 ; Rise       ; KEY[1]          ;
+; LEDG[*]   ; KEY[1]     ; 4.744 ; 4.744 ; Fall       ; KEY[1]          ;
+;  LEDG[1]  ; KEY[1]     ; 4.744 ; 4.744 ; Fall       ; KEY[1]          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; Flag       ; 3.271 ; 3.271 ; Rise       ; Flag            ;
+;  HEX0[0]  ; Flag       ; 3.302 ; 3.302 ; Rise       ; Flag            ;
+;  HEX0[1]  ; Flag       ; 3.278 ; 3.278 ; Rise       ; Flag            ;
+;  HEX0[2]  ; Flag       ; 3.271 ; 3.271 ; Rise       ; Flag            ;
+;  HEX0[3]  ; Flag       ; 3.339 ; 3.339 ; Rise       ; Flag            ;
+;  HEX0[4]  ; Flag       ; 3.271 ; 3.271 ; Rise       ; Flag            ;
+;  HEX0[5]  ; Flag       ; 3.276 ; 3.276 ; Rise       ; Flag            ;
+;  HEX0[6]  ; Flag       ; 3.277 ; 3.277 ; Rise       ; Flag            ;
+; HEX1[*]   ; Flag       ; 3.115 ; 3.115 ; Rise       ; Flag            ;
+;  HEX1[0]  ; Flag       ; 3.322 ; 3.322 ; Rise       ; Flag            ;
+;  HEX1[1]  ; Flag       ; 3.116 ; 3.116 ; Rise       ; Flag            ;
+;  HEX1[2]  ; Flag       ; 3.115 ; 3.115 ; Rise       ; Flag            ;
+;  HEX1[3]  ; Flag       ; 3.184 ; 3.184 ; Rise       ; Flag            ;
+;  HEX1[4]  ; Flag       ; 3.136 ; 3.136 ; Rise       ; Flag            ;
+;  HEX1[5]  ; Flag       ; 3.352 ; 3.352 ; Rise       ; Flag            ;
+;  HEX1[6]  ; Flag       ; 3.338 ; 3.338 ; Rise       ; Flag            ;
+; HEX2[*]   ; Flag       ; 3.295 ; 3.295 ; Fall       ; Flag            ;
+;  HEX2[0]  ; Flag       ; 3.361 ; 3.361 ; Fall       ; Flag            ;
+;  HEX2[1]  ; Flag       ; 3.295 ; 3.295 ; Fall       ; Flag            ;
+;  HEX2[2]  ; Flag       ; 3.412 ; 3.412 ; Fall       ; Flag            ;
+;  HEX2[3]  ; Flag       ; 3.387 ; 3.387 ; Fall       ; Flag            ;
+;  HEX2[4]  ; Flag       ; 3.323 ; 3.323 ; Fall       ; Flag            ;
+;  HEX2[5]  ; Flag       ; 3.363 ; 3.363 ; Fall       ; Flag            ;
+;  HEX2[6]  ; Flag       ; 3.329 ; 3.329 ; Fall       ; Flag            ;
+; HEX3[*]   ; Flag       ; 3.247 ; 3.247 ; Fall       ; Flag            ;
+;  HEX3[0]  ; Flag       ; 3.382 ; 3.382 ; Fall       ; Flag            ;
+;  HEX3[1]  ; Flag       ; 3.524 ; 3.524 ; Fall       ; Flag            ;
+;  HEX3[2]  ; Flag       ; 3.521 ; 3.521 ; Fall       ; Flag            ;
+;  HEX3[3]  ; Flag       ; 3.387 ; 3.387 ; Fall       ; Flag            ;
+;  HEX3[4]  ; Flag       ; 3.367 ; 3.367 ; Fall       ; Flag            ;
+;  HEX3[5]  ; Flag       ; 3.247 ; 3.247 ; Fall       ; Flag            ;
+;  HEX3[6]  ; Flag       ; 3.396 ; 3.396 ; Fall       ; Flag            ;
+; LEDG[*]   ; KEY[1]     ; 4.744 ; 4.744 ; Rise       ; KEY[1]          ;
+;  LEDG[1]  ; KEY[1]     ; 4.744 ; 4.744 ; Rise       ; KEY[1]          ;
+; LEDG[*]   ; KEY[1]     ; 4.744 ; 4.744 ; Fall       ; KEY[1]          ;
+;  LEDG[1]  ; KEY[1]     ; 4.744 ; 4.744 ; Fall       ; KEY[1]          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; KEY[0]     ; LEDG[0]     ; 4.757 ;    ;    ; 4.757 ;
++------------+-------------+-------+----+----+-------+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; KEY[0]     ; LEDG[0]     ; 4.757 ;    ;    ; 4.757 ;
++------------+-------------+-------+----+----+-------+
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++------------------+---------+--------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+--------+----------+---------+---------------------+
+; Worst-case Slack ; -3.726  ; -3.787 ; N/A      ; N/A     ; -1.469              ;
+;  Flag            ; -3.726  ; 1.592  ; N/A      ; N/A     ; 0.500               ;
+;  KEY[1]          ; 0.307   ; -3.787 ; N/A      ; N/A     ; -1.469              ;
+; Design-wide TNS  ; -51.28  ; -6.719 ; 0.0      ; 0.0     ; -3.913              ;
+;  Flag            ; -51.280 ; 0.000  ; N/A      ; N/A     ; 0.000               ;
+;  KEY[1]          ; 0.000   ; -6.719 ; N/A      ; N/A     ; -3.913              ;
++------------------+---------+--------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; SW[*]     ; Flag       ; 3.962 ; 3.962 ; Rise       ; Flag            ;
+;  SW[0]    ; Flag       ; 3.962 ; 3.962 ; Rise       ; Flag            ;
+;  SW[1]    ; Flag       ; 3.629 ; 3.629 ; Rise       ; Flag            ;
+;  SW[2]    ; Flag       ; 3.330 ; 3.330 ; Rise       ; Flag            ;
+;  SW[3]    ; Flag       ; 3.526 ; 3.526 ; Rise       ; Flag            ;
+;  SW[4]    ; Flag       ; 3.426 ; 3.426 ; Rise       ; Flag            ;
+;  SW[5]    ; Flag       ; 3.554 ; 3.554 ; Rise       ; Flag            ;
+;  SW[6]    ; Flag       ; 3.195 ; 3.195 ; Rise       ; Flag            ;
+;  SW[7]    ; Flag       ; 2.596 ; 2.596 ; Rise       ; Flag            ;
+; SW[*]     ; Flag       ; 4.701 ; 4.701 ; Fall       ; Flag            ;
+;  SW[0]    ; Flag       ; 4.701 ; 4.701 ; Fall       ; Flag            ;
+;  SW[1]    ; Flag       ; 4.351 ; 4.351 ; Fall       ; Flag            ;
+;  SW[2]    ; Flag       ; 4.027 ; 4.027 ; Fall       ; Flag            ;
+;  SW[3]    ; Flag       ; 4.236 ; 4.236 ; Fall       ; Flag            ;
+;  SW[4]    ; Flag       ; 4.206 ; 4.206 ; Fall       ; Flag            ;
+;  SW[5]    ; Flag       ; 4.336 ; 4.336 ; Fall       ; Flag            ;
+;  SW[6]    ; Flag       ; 3.983 ; 3.983 ; Fall       ; Flag            ;
+;  SW[7]    ; Flag       ; 3.384 ; 3.384 ; Fall       ; Flag            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; SW[*]     ; Flag       ; -0.149 ; -0.149 ; Rise       ; Flag            ;
+;  SW[0]    ; Flag       ; -0.769 ; -0.769 ; Rise       ; Flag            ;
+;  SW[1]    ; Flag       ; -0.610 ; -0.610 ; Rise       ; Flag            ;
+;  SW[2]    ; Flag       ; -0.507 ; -0.507 ; Rise       ; Flag            ;
+;  SW[3]    ; Flag       ; -0.669 ; -0.669 ; Rise       ; Flag            ;
+;  SW[4]    ; Flag       ; -0.539 ; -0.539 ; Rise       ; Flag            ;
+;  SW[5]    ; Flag       ; -0.629 ; -0.629 ; Rise       ; Flag            ;
+;  SW[6]    ; Flag       ; -0.471 ; -0.471 ; Rise       ; Flag            ;
+;  SW[7]    ; Flag       ; -0.149 ; -0.149 ; Rise       ; Flag            ;
+; SW[*]     ; Flag       ; -0.210 ; -0.210 ; Fall       ; Flag            ;
+;  SW[0]    ; Flag       ; -0.956 ; -0.956 ; Fall       ; Flag            ;
+;  SW[1]    ; Flag       ; -0.801 ; -0.801 ; Fall       ; Flag            ;
+;  SW[2]    ; Flag       ; -0.693 ; -0.693 ; Fall       ; Flag            ;
+;  SW[3]    ; Flag       ; -0.845 ; -0.845 ; Fall       ; Flag            ;
+;  SW[4]    ; Flag       ; -0.587 ; -0.587 ; Fall       ; Flag            ;
+;  SW[5]    ; Flag       ; -0.678 ; -0.678 ; Fall       ; Flag            ;
+;  SW[6]    ; Flag       ; -0.519 ; -0.519 ; Fall       ; Flag            ;
+;  SW[7]    ; Flag       ; -0.210 ; -0.210 ; Fall       ; Flag            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; Flag       ; 6.508 ; 6.508 ; Rise       ; Flag            ;
+;  HEX0[0]  ; Flag       ; 6.469 ; 6.469 ; Rise       ; Flag            ;
+;  HEX0[1]  ; Flag       ; 6.309 ; 6.309 ; Rise       ; Flag            ;
+;  HEX0[2]  ; Flag       ; 6.302 ; 6.302 ; Rise       ; Flag            ;
+;  HEX0[3]  ; Flag       ; 6.508 ; 6.508 ; Rise       ; Flag            ;
+;  HEX0[4]  ; Flag       ; 6.304 ; 6.304 ; Rise       ; Flag            ;
+;  HEX0[5]  ; Flag       ; 6.312 ; 6.312 ; Rise       ; Flag            ;
+;  HEX0[6]  ; Flag       ; 6.309 ; 6.309 ; Rise       ; Flag            ;
+; HEX1[*]   ; Flag       ; 6.533 ; 6.533 ; Rise       ; Flag            ;
+;  HEX1[0]  ; Flag       ; 6.478 ; 6.478 ; Rise       ; Flag            ;
+;  HEX1[1]  ; Flag       ; 5.939 ; 5.939 ; Rise       ; Flag            ;
+;  HEX1[2]  ; Flag       ; 5.932 ; 5.932 ; Rise       ; Flag            ;
+;  HEX1[3]  ; Flag       ; 6.142 ; 6.142 ; Rise       ; Flag            ;
+;  HEX1[4]  ; Flag       ; 5.956 ; 5.956 ; Rise       ; Flag            ;
+;  HEX1[5]  ; Flag       ; 6.533 ; 6.533 ; Rise       ; Flag            ;
+;  HEX1[6]  ; Flag       ; 6.506 ; 6.506 ; Rise       ; Flag            ;
+; HEX2[*]   ; Flag       ; 6.683 ; 6.683 ; Fall       ; Flag            ;
+;  HEX2[0]  ; Flag       ; 6.634 ; 6.634 ; Fall       ; Flag            ;
+;  HEX2[1]  ; Flag       ; 6.412 ; 6.412 ; Fall       ; Flag            ;
+;  HEX2[2]  ; Flag       ; 6.683 ; 6.683 ; Fall       ; Flag            ;
+;  HEX2[3]  ; Flag       ; 6.648 ; 6.648 ; Fall       ; Flag            ;
+;  HEX2[4]  ; Flag       ; 6.441 ; 6.441 ; Fall       ; Flag            ;
+;  HEX2[5]  ; Flag       ; 6.616 ; 6.616 ; Fall       ; Flag            ;
+;  HEX2[6]  ; Flag       ; 6.448 ; 6.448 ; Fall       ; Flag            ;
+; HEX3[*]   ; Flag       ; 6.836 ; 6.836 ; Fall       ; Flag            ;
+;  HEX3[0]  ; Flag       ; 6.657 ; 6.657 ; Fall       ; Flag            ;
+;  HEX3[1]  ; Flag       ; 6.836 ; 6.836 ; Fall       ; Flag            ;
+;  HEX3[2]  ; Flag       ; 6.826 ; 6.826 ; Fall       ; Flag            ;
+;  HEX3[3]  ; Flag       ; 6.657 ; 6.657 ; Fall       ; Flag            ;
+;  HEX3[4]  ; Flag       ; 6.630 ; 6.630 ; Fall       ; Flag            ;
+;  HEX3[5]  ; Flag       ; 6.298 ; 6.298 ; Fall       ; Flag            ;
+;  HEX3[6]  ; Flag       ; 6.664 ; 6.664 ; Fall       ; Flag            ;
+; LEDG[*]   ; KEY[1]     ; 8.880 ; 8.880 ; Rise       ; KEY[1]          ;
+;  LEDG[1]  ; KEY[1]     ; 8.880 ; 8.880 ; Rise       ; KEY[1]          ;
+; LEDG[*]   ; KEY[1]     ; 8.880 ; 8.880 ; Fall       ; KEY[1]          ;
+;  LEDG[1]  ; KEY[1]     ; 8.880 ; 8.880 ; Fall       ; KEY[1]          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; Flag       ; 3.271 ; 3.271 ; Rise       ; Flag            ;
+;  HEX0[0]  ; Flag       ; 3.302 ; 3.302 ; Rise       ; Flag            ;
+;  HEX0[1]  ; Flag       ; 3.278 ; 3.278 ; Rise       ; Flag            ;
+;  HEX0[2]  ; Flag       ; 3.271 ; 3.271 ; Rise       ; Flag            ;
+;  HEX0[3]  ; Flag       ; 3.339 ; 3.339 ; Rise       ; Flag            ;
+;  HEX0[4]  ; Flag       ; 3.271 ; 3.271 ; Rise       ; Flag            ;
+;  HEX0[5]  ; Flag       ; 3.276 ; 3.276 ; Rise       ; Flag            ;
+;  HEX0[6]  ; Flag       ; 3.277 ; 3.277 ; Rise       ; Flag            ;
+; HEX1[*]   ; Flag       ; 3.115 ; 3.115 ; Rise       ; Flag            ;
+;  HEX1[0]  ; Flag       ; 3.322 ; 3.322 ; Rise       ; Flag            ;
+;  HEX1[1]  ; Flag       ; 3.116 ; 3.116 ; Rise       ; Flag            ;
+;  HEX1[2]  ; Flag       ; 3.115 ; 3.115 ; Rise       ; Flag            ;
+;  HEX1[3]  ; Flag       ; 3.184 ; 3.184 ; Rise       ; Flag            ;
+;  HEX1[4]  ; Flag       ; 3.136 ; 3.136 ; Rise       ; Flag            ;
+;  HEX1[5]  ; Flag       ; 3.352 ; 3.352 ; Rise       ; Flag            ;
+;  HEX1[6]  ; Flag       ; 3.338 ; 3.338 ; Rise       ; Flag            ;
+; HEX2[*]   ; Flag       ; 3.295 ; 3.295 ; Fall       ; Flag            ;
+;  HEX2[0]  ; Flag       ; 3.361 ; 3.361 ; Fall       ; Flag            ;
+;  HEX2[1]  ; Flag       ; 3.295 ; 3.295 ; Fall       ; Flag            ;
+;  HEX2[2]  ; Flag       ; 3.412 ; 3.412 ; Fall       ; Flag            ;
+;  HEX2[3]  ; Flag       ; 3.387 ; 3.387 ; Fall       ; Flag            ;
+;  HEX2[4]  ; Flag       ; 3.323 ; 3.323 ; Fall       ; Flag            ;
+;  HEX2[5]  ; Flag       ; 3.363 ; 3.363 ; Fall       ; Flag            ;
+;  HEX2[6]  ; Flag       ; 3.329 ; 3.329 ; Fall       ; Flag            ;
+; HEX3[*]   ; Flag       ; 3.247 ; 3.247 ; Fall       ; Flag            ;
+;  HEX3[0]  ; Flag       ; 3.382 ; 3.382 ; Fall       ; Flag            ;
+;  HEX3[1]  ; Flag       ; 3.524 ; 3.524 ; Fall       ; Flag            ;
+;  HEX3[2]  ; Flag       ; 3.521 ; 3.521 ; Fall       ; Flag            ;
+;  HEX3[3]  ; Flag       ; 3.387 ; 3.387 ; Fall       ; Flag            ;
+;  HEX3[4]  ; Flag       ; 3.367 ; 3.367 ; Fall       ; Flag            ;
+;  HEX3[5]  ; Flag       ; 3.247 ; 3.247 ; Fall       ; Flag            ;
+;  HEX3[6]  ; Flag       ; 3.396 ; 3.396 ; Fall       ; Flag            ;
+; LEDG[*]   ; KEY[1]     ; 4.744 ; 4.744 ; Rise       ; KEY[1]          ;
+;  LEDG[1]  ; KEY[1]     ; 4.744 ; 4.744 ; Rise       ; KEY[1]          ;
+; LEDG[*]   ; KEY[1]     ; 4.744 ; 4.744 ; Fall       ; KEY[1]          ;
+;  LEDG[1]  ; KEY[1]     ; 4.744 ; 4.744 ; Fall       ; KEY[1]          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------+
+; Progagation Delay                                  ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; KEY[0]     ; LEDG[0]     ; 8.901 ;    ;    ; 8.901 ;
++------------+-------------+-------+----+----+-------+
+
+
++----------------------------------------------------+
+; Minimum Progagation Delay                          ;
++------------+-------------+-------+----+----+-------+
+; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
++------------+-------------+-------+----+----+-------+
+; KEY[0]     ; LEDG[0]     ; 4.757 ;    ;    ; 4.757 ;
++------------+-------------+-------+----+----+-------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; KEY[1]     ; Flag     ; 0        ; 0        ; 14       ; 0        ;
+; Flag       ; KEY[1]   ; 2        ; 2        ; 0        ; 0        ;
+; KEY[1]     ; KEY[1]   ; 1        ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; KEY[1]     ; Flag     ; 0        ; 0        ; 14       ; 0        ;
+; Flag       ; KEY[1]   ; 2        ; 2        ; 0        ; 0        ;
+; KEY[1]     ; KEY[1]   ; 1        ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 10    ; 10   ;
+; Unconstrained Input Port Paths  ; 116   ; 116  ;
+; Unconstrained Output Ports      ; 30    ; 30   ;
+; Unconstrained Output Port Paths ; 30    ; 30   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Oct 12 16:08:35 2020
+Info: Command: quartus_sta L3P5 -c L3P5
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 28 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'L3P5.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name KEY[1] KEY[1]
+    Info (332105): create_clock -period 1.000 -name Flag Flag
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -3.726
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.726       -51.280 Flag 
+    Info (332119):     0.307         0.000 KEY[1] 
+Info (332146): Worst-case hold slack is -3.787
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.787        -6.719 KEY[1] 
+    Info (332119):     3.472         0.000 Flag 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.469
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.469        -3.913 KEY[1] 
+    Info (332119):     0.500         0.000 Flag 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.030
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.030       -14.123 Flag 
+    Info (332119):     0.665         0.000 KEY[1] 
+Info (332146): Worst-case hold slack is -1.822
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.822        -3.321 KEY[1] 
+    Info (332119):     1.592         0.000 Flag 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -3.222 KEY[1] 
+    Info (332119):     0.500         0.000 Flag 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4534 megabytes
+    Info: Processing ended: Mon Oct 12 16:08:39 2020
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:01
+
+

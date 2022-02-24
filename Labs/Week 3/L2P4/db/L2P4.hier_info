@@ -1,0 +1,333 @@
+|L2P4
+SW[0] => full_add:fa0.b
+SW[0] => bcd_to_hex:h2.B[0]
+SW[1] => LEDG.IN0
+SW[1] => full_add:fa1.b
+SW[1] => bcd_to_hex:h2.B[1]
+SW[2] => LEDG.IN1
+SW[2] => full_add:fa2.b
+SW[2] => bcd_to_hex:h2.B[2]
+SW[3] => LEDG.IN1
+SW[3] => full_add:fa3.b
+SW[3] => bcd_to_hex:h2.B[3]
+SW[4] => full_add:fa0.a
+SW[4] => bcd_to_hex:h3.B[0]
+SW[5] => LEDG.IN0
+SW[5] => full_add:fa1.a
+SW[5] => bcd_to_hex:h3.B[1]
+SW[6] => LEDG.IN1
+SW[6] => full_add:fa2.a
+SW[6] => bcd_to_hex:h3.B[2]
+SW[7] => LEDG.IN1
+SW[7] => full_add:fa3.a
+SW[7] => bcd_to_hex:h3.B[3]
+SW[8] => full_add:fa0.ci
+SW[9] => ~NO_FANOUT~
+LEDG[0] <= full_add:fa0.s
+LEDG[1] <= full_add:fa1.s
+LEDG[2] <= full_add:fa2.s
+LEDG[3] <= full_add:fa3.s
+LEDG[4] <= full_add:fa3.co
+LEDG[5] <= <GND>
+LEDG[6] <= <GND>
+LEDG[7] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[8] <= <GND>
+LEDG[9] <= <GND>
+HEX0[6] <= bcd_to_hex:h0.H[6]
+HEX0[5] <= bcd_to_hex:h0.H[5]
+HEX0[4] <= bcd_to_hex:h0.H[4]
+HEX0[3] <= bcd_to_hex:h0.H[3]
+HEX0[2] <= bcd_to_hex:h0.H[2]
+HEX0[1] <= bcd_to_hex:h0.H[1]
+HEX0[0] <= bcd_to_hex:h0.H[0]
+HEX1[6] <= bcd_to_hex:h1.H[6]
+HEX1[5] <= bcd_to_hex:h1.H[5]
+HEX1[4] <= bcd_to_hex:h1.H[4]
+HEX1[3] <= bcd_to_hex:h1.H[3]
+HEX1[2] <= bcd_to_hex:h1.H[2]
+HEX1[1] <= bcd_to_hex:h1.H[1]
+HEX1[0] <= bcd_to_hex:h1.H[0]
+HEX2[6] <= bcd_to_hex:h2.H[6]
+HEX2[5] <= bcd_to_hex:h2.H[5]
+HEX2[4] <= bcd_to_hex:h2.H[4]
+HEX2[3] <= bcd_to_hex:h2.H[3]
+HEX2[2] <= bcd_to_hex:h2.H[2]
+HEX2[1] <= bcd_to_hex:h2.H[1]
+HEX2[0] <= bcd_to_hex:h2.H[0]
+HEX3[6] <= bcd_to_hex:h3.H[6]
+HEX3[5] <= bcd_to_hex:h3.H[5]
+HEX3[4] <= bcd_to_hex:h3.H[4]
+HEX3[3] <= bcd_to_hex:h3.H[3]
+HEX3[2] <= bcd_to_hex:h3.H[2]
+HEX3[1] <= bcd_to_hex:h3.H[1]
+HEX3[0] <= bcd_to_hex:h3.H[0]
+
+
+|L2P4|full_add:fa0
+a => ms.IN0
+b => ms.IN1
+b => mux_2to1:mFullAdder.d0
+ci => s.IN1
+ci => mux_2to1:mFullAdder.d1
+co <= mux_2to1:mFullAdder.f
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P4|full_add:fa0|mux_2to1:mFullAdder
+d0 => f.IN0
+d1 => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P4|full_add:fa1
+a => ms.IN0
+b => ms.IN1
+b => mux_2to1:mFullAdder.d0
+ci => s.IN1
+ci => mux_2to1:mFullAdder.d1
+co <= mux_2to1:mFullAdder.f
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P4|full_add:fa1|mux_2to1:mFullAdder
+d0 => f.IN0
+d1 => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P4|full_add:fa2
+a => ms.IN0
+b => ms.IN1
+b => mux_2to1:mFullAdder.d0
+ci => s.IN1
+ci => mux_2to1:mFullAdder.d1
+co <= mux_2to1:mFullAdder.f
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P4|full_add:fa2|mux_2to1:mFullAdder
+d0 => f.IN0
+d1 => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P4|full_add:fa3
+a => ms.IN0
+b => ms.IN1
+b => mux_2to1:mFullAdder.d0
+ci => s.IN1
+ci => mux_2to1:mFullAdder.d1
+co <= mux_2to1:mFullAdder.f
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P4|full_add:fa3|mux_2to1:mFullAdder
+d0 => f.IN0
+d1 => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P4|mux_2to1:m0
+d0 => f.IN0
+d1 => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P4|mux_2to1:m1
+d0 => f.IN0
+d1 => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P4|mux_2to1:m2
+d0 => f.IN0
+d1 => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P4|mux_2to1:m3
+d0 => f.IN0
+d1 => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P4|bcd_to_hex:h0
+B[0] => H.IN1
+B[0] => H.IN0
+B[0] => H.IN1
+B[0] => H.IN0
+B[0] => H.IN1
+B[0] => H.IN0
+B[0] => H.IN1
+B[0] => H.IN0
+B[0] => H.IN0
+B[0] => H.IN1
+B[1] => H.IN1
+B[1] => H.IN1
+B[1] => H.IN0
+B[1] => H.IN1
+B[1] => H.IN0
+B[1] => H.IN0
+B[1] => H.IN1
+B[1] => H.IN1
+B[1] => H.IN0
+B[1] => H.IN1
+B[2] => H.IN1
+B[2] => H.IN0
+B[2] => H.IN1
+B[2] => H.IN1
+B[2] => H.IN1
+B[2] => H.IN1
+B[2] => H.IN0
+B[3] => H.IN1
+B[3] => H.IN1
+B[3] => H.IN1
+B[3] => H.IN1
+H[6] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[5] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[4] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[3] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[2] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[1] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[0] <= H.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P4|bcd_to_hex:h1
+B[0] => H.IN1
+B[0] => H.IN0
+B[0] => H.IN1
+B[0] => H.IN0
+B[0] => H.IN1
+B[0] => H.IN0
+B[0] => H.IN1
+B[0] => H.IN0
+B[0] => H.IN0
+B[0] => H.IN1
+B[1] => H.IN1
+B[1] => H.IN1
+B[1] => H.IN0
+B[1] => H.IN1
+B[1] => H.IN0
+B[1] => H.IN0
+B[1] => H.IN1
+B[1] => H.IN1
+B[1] => H.IN0
+B[1] => H.IN1
+B[2] => H.IN1
+B[2] => H.IN0
+B[2] => H.IN1
+B[2] => H.IN1
+B[2] => H.IN1
+B[2] => H.IN1
+B[2] => H.IN0
+B[3] => H.IN1
+B[3] => H.IN1
+B[3] => H.IN1
+B[3] => H.IN1
+H[6] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[5] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[4] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[3] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[2] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[1] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[0] <= H.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P4|bcd_to_hex:h2
+B[0] => H.IN1
+B[0] => H.IN0
+B[0] => H.IN1
+B[0] => H.IN0
+B[0] => H.IN1
+B[0] => H.IN0
+B[0] => H.IN1
+B[0] => H.IN0
+B[0] => H.IN0
+B[0] => H.IN1
+B[1] => H.IN1
+B[1] => H.IN1
+B[1] => H.IN0
+B[1] => H.IN1
+B[1] => H.IN0
+B[1] => H.IN0
+B[1] => H.IN1
+B[1] => H.IN1
+B[1] => H.IN0
+B[1] => H.IN1
+B[2] => H.IN1
+B[2] => H.IN0
+B[2] => H.IN1
+B[2] => H.IN1
+B[2] => H.IN1
+B[2] => H.IN1
+B[2] => H.IN0
+B[3] => H.IN1
+B[3] => H.IN1
+B[3] => H.IN1
+B[3] => H.IN1
+H[6] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[5] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[4] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[3] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[2] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[1] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[0] <= H.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P4|bcd_to_hex:h3
+B[0] => H.IN1
+B[0] => H.IN0
+B[0] => H.IN1
+B[0] => H.IN0
+B[0] => H.IN1
+B[0] => H.IN0
+B[0] => H.IN1
+B[0] => H.IN0
+B[0] => H.IN0
+B[0] => H.IN1
+B[1] => H.IN1
+B[1] => H.IN1
+B[1] => H.IN0
+B[1] => H.IN1
+B[1] => H.IN0
+B[1] => H.IN0
+B[1] => H.IN1
+B[1] => H.IN1
+B[1] => H.IN0
+B[1] => H.IN1
+B[2] => H.IN1
+B[2] => H.IN0
+B[2] => H.IN1
+B[2] => H.IN1
+B[2] => H.IN1
+B[2] => H.IN1
+B[2] => H.IN0
+B[3] => H.IN1
+B[3] => H.IN1
+B[3] => H.IN1
+B[3] => H.IN1
+H[6] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[5] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[4] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[3] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[2] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[1] <= H.DB_MAX_OUTPUT_PORT_TYPE
+H[0] <= H.DB_MAX_OUTPUT_PORT_TYPE
+
+

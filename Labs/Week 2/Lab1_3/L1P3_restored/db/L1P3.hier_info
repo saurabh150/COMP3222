@@ -1,0 +1,27 @@
+|L1P3
+SW[0] => M.IN0
+SW[1] => M.IN0
+SW[2] => N.IN0
+SW[3] => N.IN0
+SW[4] => N.IN0
+SW[5] => N.IN0
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => N.IN1
+SW[8] => N.IN1
+SW[8] => N.IN1
+SW[8] => N.IN1
+SW[9] => M.IN1
+SW[9] => M.IN1
+SW[9] => M.IN1
+SW[9] => M.IN1
+LEDG[0] <= M.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[1] <= M.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[2] <= <GND>
+LEDG[3] <= <GND>
+LEDG[4] <= <GND>
+LEDG[5] <= <GND>
+LEDG[6] <= <GND>
+LEDG[7] <= <VCC>
+
+

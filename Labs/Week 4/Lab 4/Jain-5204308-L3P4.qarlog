@@ -1,0 +1,17 @@
+Quartus II Archive log --	C:/Labs/Week 4/Lab 4/Jain-5204308-L3P4.qarlog
+
+Archive:	C:/Labs/Week 4/Lab 4/Jain-5204308-L3P4.qar
+Date:		Mon Oct 12 16:07:52 2020
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Labs/Week 4/Lab 4/L3P4.qpf
+C:/Labs/Week 4/Lab 4/L3P4.qsf
+C:/Labs/Week 4/Lab 4/L3P4.vhd
+C:/Labs/Week 4/Lab 4/L3P4.vwf
+C:/Labs/Week 4/Lab 4/assignment_defaults.qdf
+C:/Labs/Week 4/Lab 4/incremental_db/compiled_partitions/L3P4.db_info
+	======= Total: 6 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

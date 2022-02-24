@@ -1,0 +1,106 @@
+|L7P1
+KEY[0] => Q[0].CLK
+KEY[0] => D_ff:Gen1:1:Dffs.Clk
+KEY[0] => D_ff:Gen1:2:Dffs.Clk
+KEY[0] => D_ff:Gen1:3:Dffs.Clk
+KEY[0] => D_ff:Gen1:4:Dffs.Clk
+KEY[0] => D_ff:Gen1:5:Dffs.Clk
+KEY[0] => D_ff:Gen1:6:Dffs.Clk
+KEY[0] => D_ff:Gen1:7:Dffs.Clk
+KEY[0] => D_ff:Gen1:8:Dffs.Clk
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+SW[0] => D_ff:Gen1:1:Dffs.nReset
+SW[0] => D_ff:Gen1:2:Dffs.nReset
+SW[0] => D_ff:Gen1:3:Dffs.nReset
+SW[0] => D_ff:Gen1:4:Dffs.nReset
+SW[0] => D_ff:Gen1:5:Dffs.nReset
+SW[0] => D_ff:Gen1:6:Dffs.nReset
+SW[0] => D_ff:Gen1:7:Dffs.nReset
+SW[0] => D_ff:Gen1:8:Dffs.nReset
+SW[0] => Q[0].DATAIN
+SW[1] => D[5].IN1
+SW[1] => D[6].IN1
+SW[1] => D[7].IN1
+SW[1] => D[8].IN1
+SW[1] => D[1].IN1
+SW[1] => D[2].IN1
+SW[1] => D[3].IN1
+SW[1] => D[4].IN1
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+LEDR[0] <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= D_ff:Gen1:1:Dffs.Q
+LEDR[2] <= D_ff:Gen1:2:Dffs.Q
+LEDR[3] <= D_ff:Gen1:3:Dffs.Q
+LEDR[4] <= D_ff:Gen1:4:Dffs.Q
+LEDR[5] <= D_ff:Gen1:5:Dffs.Q
+LEDR[6] <= D_ff:Gen1:6:Dffs.Q
+LEDR[7] <= D_ff:Gen1:7:Dffs.Q
+LEDR[8] <= D_ff:Gen1:8:Dffs.Q
+LEDR[9] <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L7P1|D_ff:\Gen1:1:Dffs
+Clk => Q~reg0.CLK
+D => Q.DATAB
+nReset => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L7P1|D_ff:\Gen1:2:Dffs
+Clk => Q~reg0.CLK
+D => Q.DATAB
+nReset => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L7P1|D_ff:\Gen1:3:Dffs
+Clk => Q~reg0.CLK
+D => Q.DATAB
+nReset => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L7P1|D_ff:\Gen1:4:Dffs
+Clk => Q~reg0.CLK
+D => Q.DATAB
+nReset => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L7P1|D_ff:\Gen1:5:Dffs
+Clk => Q~reg0.CLK
+D => Q.DATAB
+nReset => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L7P1|D_ff:\Gen1:6:Dffs
+Clk => Q~reg0.CLK
+D => Q.DATAB
+nReset => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L7P1|D_ff:\Gen1:7:Dffs
+Clk => Q~reg0.CLK
+D => Q.DATAB
+nReset => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L7P1|D_ff:\Gen1:8:Dffs
+Clk => Q~reg0.CLK
+D => Q.DATAB
+nReset => Q.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

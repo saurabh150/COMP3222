@@ -1,0 +1,30 @@
+|L3P4
+Clock => D_latch:latch.Clk
+Clock => D_ff:posDff.Clk
+Clock => neg_Dff:negDff.Clk
+D => D_latch:latch.D
+D => D_ff:posDff.D
+D => neg_Dff:negDff.D
+Qa <= D_latch:latch.Q
+Qb <= D_ff:posDff.Q
+Qc <= neg_Dff:negDff.Q
+
+
+|L3P4|D_latch:latch
+Clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L3P4|D_ff:posDff
+Clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L3P4|neg_Dff:negDff
+Clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

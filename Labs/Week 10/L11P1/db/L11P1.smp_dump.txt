@@ -1,0 +1,6 @@
+
+State Machine - |L11P1|y
+Name y.s3 y.s2 y.s1 
+y.s1 0 0 0 
+y.s2 0 1 1 
+y.s3 1 0 1 

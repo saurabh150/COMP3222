@@ -1,0 +1,18 @@
+Quartus II Archive log --	C:/Labs/Week8/Lab9/output_files/Jain-5204308-Lab9P1Board.qarlog
+
+Archive:	C:/Labs/Week8/Lab9/output_files/Jain-5204308-Lab9P1Board.qar
+Date:		Mon Nov 09 23:40:05 2020
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Labs/Week8/Lab9/db/part1.sim.vwf
+C:/Labs/Week8/Lab9/incremental_db/compiled_partitions/part1.db_info
+C:/Labs/Week8/Lab9/output_files/sim.vwf
+C:/Labs/Week8/Lab9/part1.qpf
+C:/Labs/Week8/Lab9/part1.qsf
+C:/Labs/Week8/Lab9/part1.vhd
+c:/altera/13.0sp1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

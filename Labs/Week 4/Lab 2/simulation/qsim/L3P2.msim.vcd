@@ -1,0 +1,233 @@
+$comment
+	File created using the following command:
+		vcd file L3P2.msim.vcd -direction
+$end
+$date
+	Thu Oct 08 20:39:09 2020
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module L3P2_vlg_vec_tst $end
+$var reg 1 ! Clk $end
+$var reg 1 " D $end
+$var wire 1 # Q $end
+$var wire 1 $ sampler $end
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + R_g~combout $end
+$var wire 1 , R~combout $end
+$var wire 1 - Q~output_o $end
+$var wire 1 . Qb~combout $end
+$var wire 1 / Clk~input_o $end
+$var wire 1 0 D~input_o $end
+$var wire 1 1 S_g~combout $end
+$var wire 1 2 Qa~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+x#
+x$
+0%
+1&
+x'
+1(
+1)
+1*
+1+
+1,
+x-
+x.
+0/
+00
+11
+x2
+$end
+#20000
+1!
+1/
+0$
+0+
+1.
+02
+0-
+0#
+#26112
+1"
+10
+1$
+01
+0,
+1+
+12
+0.
+1-
+1#
+#40000
+0!
+0/
+0$
+11
+#46080
+0"
+00
+1$
+1,
+#60000
+1!
+1/
+0$
+0+
+1.
+02
+0-
+0#
+#80000
+0!
+0/
+1$
+1+
+#90000
+1"
+10
+0$
+0,
+#100000
+1!
+1/
+1$
+01
+12
+0.
+1-
+1#
+#110000
+0"
+00
+0$
+11
+1,
+0+
+1.
+02
+0-
+0#
+#120000
+0!
+0/
+1$
+1+
+#130000
+1"
+10
+0$
+0,
+#140000
+1!
+1/
+1$
+01
+12
+0.
+1-
+1#
+#160000
+0!
+0/
+0$
+11
+#170000
+0"
+00
+1$
+1,
+#180000
+1!
+1"
+1/
+10
+0$
+01
+0+
+0,
+1.
+1+
+0.
+#190000
+0"
+00
+1$
+11
+1,
+0+
+1.
+02
+0-
+0#
+#200000
+0!
+0/
+0$
+1+
+#220000
+1!
+1/
+1$
+0+
+#240000
+1"
+0!
+10
+0/
+0$
+0,
+1+
+#260000
+0"
+1!
+00
+1/
+1$
+1,
+0+
+#280000
+1"
+0!
+10
+0/
+0$
+0,
+1+
+#300000
+1!
+1/
+1$
+01
+12
+0.
+1-
+1#
+#310000
+0"
+00
+0$
+11
+1,
+0+
+1.
+02
+0-
+0#
+#320000

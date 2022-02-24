@@ -1,0 +1,9 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164;
+USE ieee.std_logic_unsigned;
+
+ENTITY L9P1 IS
+	PORT (SW: IN std_logic_vector(9 DOWNTO 0);
+			KEY: IN std_logic_vector(1 DOWNTO 0);
+			LEDR: OUT std_logic_vector(9 DOWNTO 0));
+END L9P1;

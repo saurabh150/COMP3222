@@ -1,0 +1,11 @@
+
+State Machine - |L7P4|y_Q
+Name y_Q.Shift y_Q.WaitState y_Q.Dot y_Q.Dash3 y_Q.Dash2 y_Q.Dash1 y_Q.Check y_Q.Init 
+y_Q.Init 0 0 0 0 0 0 0 0 
+y_Q.Check 0 0 0 0 0 0 1 1 
+y_Q.Dash1 0 0 0 0 0 1 0 1 
+y_Q.Dash2 0 0 0 0 1 0 0 1 
+y_Q.Dash3 0 0 0 1 0 0 0 1 
+y_Q.Dot 0 0 1 0 0 0 0 1 
+y_Q.WaitState 0 1 0 0 0 0 0 1 
+y_Q.Shift 1 0 0 0 0 0 0 1 

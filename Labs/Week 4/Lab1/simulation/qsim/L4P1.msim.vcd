@@ -1,0 +1,129 @@
+$comment
+	File created using the following command:
+		vcd file L4P1.msim.vcd -direction
+$end
+$date
+	Thu Oct 08 20:03:49 2020
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module L4P1_vlg_vec_tst $end
+$var reg 1 ! Clk $end
+$var reg 1 " R $end
+$var reg 1 # S $end
+$var wire 1 $ Q $end
+$var wire 1 % sampler $end
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , S~combout $end
+$var wire 1 - Clk~combout $end
+$var wire 1 . S_g~combout $end
+$var wire 1 / Qb~combout $end
+$var wire 1 0 R~combout $end
+$var wire 1 1 R_g~combout $end
+$var wire 1 2 Qa~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+x$
+x%
+0&
+1'
+x(
+1)
+1*
+1+
+0,
+0-
+0.
+x/
+00
+01
+x2
+$end
+#10000
+1!
+1-
+0%
+#20000
+1#
+0!
+1,
+0-
+1%
+#30000
+1!
+1-
+0%
+1.
+0/
+12
+1$
+#40000
+0#
+0!
+0,
+0-
+1%
+0.
+#50000
+1"
+1!
+10
+1-
+0%
+11
+02
+1/
+0$
+#60000
+1#
+0"
+0!
+1,
+00
+0-
+1%
+01
+#70000
+1!
+1-
+0%
+1.
+0/
+12
+1$
+#80000
+0#
+0!
+0,
+0-
+1%
+0.
+#90000
+1"
+1#
+1!
+10
+1,
+1-
+0%
+11
+1.
+02
+0$
+#100000

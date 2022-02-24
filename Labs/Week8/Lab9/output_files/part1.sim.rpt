@@ -1,0 +1,797 @@
+Simulator report for part1
+Mon Nov 09 23:16:52 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 270.0 ns     ;
+; Simulation Netlist Size     ; 297 nodes    ;
+; Simulation Coverage         ;      15.74 % ;
+; Total Number of Transitions ; 365          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C20F484C7 ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                   ;
++--------------------------------------------------------------------------------------------+-----------------------------------------+---------------+
+; Option                                                                                     ; Setting                                 ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------------------+---------------+
+; Simulation mode                                                                            ; Timing                                  ; Timing        ;
+; Start time                                                                                 ; 0 ns                                    ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                     ;               ;
+; Vector input source                                                                        ; C:/Labs/Week8/Lab9/output_files/sim.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                      ; On            ;
+; Check outputs                                                                              ; Off                                     ; Off           ;
+; Report simulation coverage                                                                 ; On                                      ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                      ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                      ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                      ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                     ; Off           ;
+; Detect glitches                                                                            ; Off                                     ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                     ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                     ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                     ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                     ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                      ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                              ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                     ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                     ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                    ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      15.74 % ;
+; Total nodes checked                                 ; 297          ;
+; Total output ports checked                          ; 305          ;
+; Total output ports with complete 1/0-value coverage ; 48           ;
+; Total output ports with no 1/0-value coverage       ; 254          ;
+; Total output ports with no 1-value coverage         ; 254          ;
+; Total output ports with no 0-value coverage         ; 257          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                      ;
++-------------------------------+-------------------------------+------------------+
+; Node Name                     ; Output Port Name              ; Output Port Type ;
++-------------------------------+-------------------------------+------------------+
+; |part1|regn:G_reg|Q[0]~11     ; |part1|regn:G_reg|Q[0]~11     ; combout          ;
+; |part1|regn:G_reg|Q[2]~15     ; |part1|regn:G_reg|Q[2]~15     ; combout          ;
+; |part1|regn:G_reg|Q[6]~23     ; |part1|regn:G_reg|Q[6]~23     ; combout          ;
+; |part1|Tstep_Q.T1             ; |part1|Tstep_Q.T1             ; regout           ;
+; |part1|regn:IR_reg|Q[6]       ; |part1|regn:IR_reg|Q[6]       ; regout           ;
+; |part1|Selector1~2            ; |part1|Selector1~2            ; combout          ;
+; |part1|Selector1~3            ; |part1|Selector1~3            ; combout          ;
+; |part1|Selector1~4            ; |part1|Selector1~4            ; combout          ;
+; |part1|Equal3~0               ; |part1|Equal3~0               ; combout          ;
+; |part1|Equal7~0               ; |part1|Equal7~0               ; combout          ;
+; |part1|BusWires[0]~3          ; |part1|BusWires[0]~3          ; combout          ;
+; |part1|BusWires[0]~6          ; |part1|BusWires[0]~6          ; combout          ;
+; |part1|BusWires[0]~10         ; |part1|BusWires[0]~10         ; combout          ;
+; |part1|BusWires[0]~11         ; |part1|BusWires[0]~11         ; combout          ;
+; |part1|BusWires[2]~23         ; |part1|BusWires[2]~23         ; combout          ;
+; |part1|BusWires[2]~24         ; |part1|BusWires[2]~24         ; combout          ;
+; |part1|BusWires[2]~25         ; |part1|BusWires[2]~25         ; combout          ;
+; |part1|BusWires[6]~53         ; |part1|BusWires[6]~53         ; combout          ;
+; |part1|Selector17~0           ; |part1|Selector17~0           ; combout          ;
+; |part1|Tstep_Q.T0             ; |part1|Tstep_Q.T0             ; regout           ;
+; |part1|Tstep_Q.T0~0           ; |part1|Tstep_Q.T0~0           ; combout          ;
+; |part1|Tstep_Q~8              ; |part1|Tstep_Q~8              ; combout          ;
+; |part1|Tstep_Q~9              ; |part1|Tstep_Q~9              ; combout          ;
+; |part1|Add0~0                 ; |part1|Add0~0                 ; combout          ;
+; |part1|Selector9~0            ; |part1|Selector9~0            ; combout          ;
+; |part1|Add0~2                 ; |part1|Add0~2                 ; combout          ;
+; |part1|Add0~6                 ; |part1|Add0~6                 ; combout          ;
+; |part1|Tstep_Q~11             ; |part1|Tstep_Q~11             ; combout          ;
+; |part1|Tstep_Q~12             ; |part1|Tstep_Q~12             ; combout          ;
+; |part1|LEDR[0]                ; |part1|LEDR[0]                ; padio            ;
+; |part1|LEDR[2]                ; |part1|LEDR[2]                ; padio            ;
+; |part1|LEDR[6]                ; |part1|LEDR[6]                ; padio            ;
+; |part1|LEDR[9]                ; |part1|LEDR[9]                ; padio            ;
+; |part1|SW[0]                  ; |part1|SW[0]~corein           ; combout          ;
+; |part1|SW[2]                  ; |part1|SW[2]~corein           ; combout          ;
+; |part1|SW[6]                  ; |part1|SW[6]~corein           ; combout          ;
+; |part1|SW[9]                  ; |part1|SW[9]~corein           ; combout          ;
+; |part1|KEY[1]                 ; |part1|KEY[1]~corein          ; combout          ;
+; |part1|regn:reg_6|Q[0]~feeder ; |part1|regn:reg_6|Q[0]~feeder ; combout          ;
+; |part1|regn:reg_7|Q[0]~feeder ; |part1|regn:reg_7|Q[0]~feeder ; combout          ;
+; |part1|regn:reg_3|Q[2]~feeder ; |part1|regn:reg_3|Q[2]~feeder ; combout          ;
+; |part1|regn:reg_4|Q[2]~feeder ; |part1|regn:reg_4|Q[2]~feeder ; combout          ;
+; |part1|regn:reg_6|Q[2]~feeder ; |part1|regn:reg_6|Q[2]~feeder ; combout          ;
+; |part1|regn:reg_1|Q[2]~feeder ; |part1|regn:reg_1|Q[2]~feeder ; combout          ;
+; |part1|regn:reg_2|Q[6]~feeder ; |part1|regn:reg_2|Q[6]~feeder ; combout          ;
+; |part1|regn:reg_1|Q[6]~feeder ; |part1|regn:reg_1|Q[6]~feeder ; combout          ;
+; |part1|regn:reg_7|Q[6]~feeder ; |part1|regn:reg_7|Q[6]~feeder ; combout          ;
+; |part1|regn:reg_3|Q[6]~feeder ; |part1|regn:reg_3|Q[6]~feeder ; combout          ;
++-------------------------------+-------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                         ;
++-------------------------------+-------------------------------+------------------+
+; Node Name                     ; Output Port Name              ; Output Port Type ;
++-------------------------------+-------------------------------+------------------+
+; |part1|regn:G_reg|Q[0]        ; |part1|regn:G_reg|Q[0]        ; regout           ;
+; |part1|regn:G_reg|Q[1]        ; |part1|regn:G_reg|Q[1]        ; regout           ;
+; |part1|regn:G_reg|Q[2]        ; |part1|regn:G_reg|Q[2]        ; regout           ;
+; |part1|regn:G_reg|Q[3]        ; |part1|regn:G_reg|Q[3]        ; regout           ;
+; |part1|regn:G_reg|Q[4]        ; |part1|regn:G_reg|Q[4]        ; regout           ;
+; |part1|regn:G_reg|Q[5]        ; |part1|regn:G_reg|Q[5]        ; regout           ;
+; |part1|regn:G_reg|Q[6]        ; |part1|regn:G_reg|Q[6]        ; regout           ;
+; |part1|regn:G_reg|Q[7]        ; |part1|regn:G_reg|Q[7]        ; regout           ;
+; |part1|regn:G_reg|Q[8]        ; |part1|regn:G_reg|Q[8]        ; regout           ;
+; |part1|regn:G_reg|Q[0]~10     ; |part1|regn:G_reg|Q[0]~10     ; cout             ;
+; |part1|regn:G_reg|Q[0]~11     ; |part1|regn:G_reg|Q[0]~12     ; cout             ;
+; |part1|regn:G_reg|Q[1]~13     ; |part1|regn:G_reg|Q[1]~13     ; combout          ;
+; |part1|regn:G_reg|Q[1]~13     ; |part1|regn:G_reg|Q[1]~14     ; cout             ;
+; |part1|regn:G_reg|Q[2]~15     ; |part1|regn:G_reg|Q[2]~16     ; cout             ;
+; |part1|regn:G_reg|Q[3]~17     ; |part1|regn:G_reg|Q[3]~17     ; combout          ;
+; |part1|regn:G_reg|Q[3]~17     ; |part1|regn:G_reg|Q[3]~18     ; cout             ;
+; |part1|regn:G_reg|Q[4]~19     ; |part1|regn:G_reg|Q[4]~19     ; combout          ;
+; |part1|regn:G_reg|Q[4]~19     ; |part1|regn:G_reg|Q[4]~20     ; cout             ;
+; |part1|regn:G_reg|Q[5]~21     ; |part1|regn:G_reg|Q[5]~21     ; combout          ;
+; |part1|regn:G_reg|Q[5]~21     ; |part1|regn:G_reg|Q[5]~22     ; cout             ;
+; |part1|regn:G_reg|Q[6]~23     ; |part1|regn:G_reg|Q[6]~24     ; cout             ;
+; |part1|regn:G_reg|Q[7]~25     ; |part1|regn:G_reg|Q[7]~25     ; combout          ;
+; |part1|regn:G_reg|Q[7]~25     ; |part1|regn:G_reg|Q[7]~26     ; cout             ;
+; |part1|regn:G_reg|Q[8]~27     ; |part1|regn:G_reg|Q[8]~27     ; combout          ;
+; |part1|regn:IR_reg|Q[7]       ; |part1|regn:IR_reg|Q[7]       ; regout           ;
+; |part1|regn:IR_reg|Q[3]       ; |part1|regn:IR_reg|Q[3]       ; regout           ;
+; |part1|regn:IR_reg|Q[8]       ; |part1|regn:IR_reg|Q[8]       ; regout           ;
+; |part1|Selector1~0            ; |part1|Selector1~0            ; combout          ;
+; |part1|regn:IR_reg|Q[4]       ; |part1|regn:IR_reg|Q[4]       ; regout           ;
+; |part1|regn:IR_reg|Q[5]       ; |part1|regn:IR_reg|Q[5]       ; regout           ;
+; |part1|Selector1~1            ; |part1|Selector1~1            ; combout          ;
+; |part1|Tstep_Q.T2             ; |part1|Tstep_Q.T2             ; regout           ;
+; |part1|Gin~0                  ; |part1|Gin~0                  ; combout          ;
+; |part1|regn:IR_reg|Q[0]       ; |part1|regn:IR_reg|Q[0]       ; regout           ;
+; |part1|regn:IR_reg|Q[1]       ; |part1|regn:IR_reg|Q[1]       ; regout           ;
+; |part1|regn:IR_reg|Q[2]       ; |part1|regn:IR_reg|Q[2]       ; regout           ;
+; |part1|Selector2~0            ; |part1|Selector2~0            ; combout          ;
+; |part1|Selector6~0            ; |part1|Selector6~0            ; combout          ;
+; |part1|Selector8~0            ; |part1|Selector8~0            ; combout          ;
+; |part1|Selector6~1            ; |part1|Selector6~1            ; combout          ;
+; |part1|Selector5~0            ; |part1|Selector5~0            ; combout          ;
+; |part1|Selector15~2           ; |part1|Selector15~2           ; combout          ;
+; |part1|Selector7~0            ; |part1|Selector7~0            ; combout          ;
+; |part1|Selector8~1            ; |part1|Selector8~1            ; combout          ;
+; |part1|Selector4~0            ; |part1|Selector4~0            ; combout          ;
+; |part1|Selector2~1            ; |part1|Selector2~1            ; combout          ;
+; |part1|Selector4~1            ; |part1|Selector4~1            ; combout          ;
+; |part1|Selector5~1            ; |part1|Selector5~1            ; combout          ;
+; |part1|Equal4~0               ; |part1|Equal4~0               ; combout          ;
+; |part1|Selector3~0            ; |part1|Selector3~0            ; combout          ;
+; |part1|Selector3~1            ; |part1|Selector3~1            ; combout          ;
+; |part1|Selector2~2            ; |part1|Selector2~2            ; combout          ;
+; |part1|Selector2~3            ; |part1|Selector2~3            ; combout          ;
+; |part1|Equal4~1               ; |part1|Equal4~1               ; combout          ;
+; |part1|Equal3~1               ; |part1|Equal3~1               ; combout          ;
+; |part1|Equal3~2               ; |part1|Equal3~2               ; combout          ;
+; |part1|regn:reg_4|Q[0]        ; |part1|regn:reg_4|Q[0]        ; regout           ;
+; |part1|regn:reg_3|Q[0]        ; |part1|regn:reg_3|Q[0]        ; regout           ;
+; |part1|BusWires[0]~0          ; |part1|BusWires[0]~0          ; combout          ;
+; |part1|Equal5~0               ; |part1|Equal5~0               ; combout          ;
+; |part1|Equal5~1               ; |part1|Equal5~1               ; combout          ;
+; |part1|regn:reg_2|Q[0]        ; |part1|regn:reg_2|Q[0]        ; regout           ;
+; |part1|Tstep_Q.T3             ; |part1|Tstep_Q.T3             ; regout           ;
+; |part1|BusWires[0]~1          ; |part1|BusWires[0]~1          ; combout          ;
+; |part1|BusWires[0]~2          ; |part1|BusWires[0]~2          ; combout          ;
+; |part1|Equal0~0               ; |part1|Equal0~0               ; combout          ;
+; |part1|Equal0~1               ; |part1|Equal0~1               ; combout          ;
+; |part1|Equal0~2               ; |part1|Equal0~2               ; combout          ;
+; |part1|regn:reg_7|Q[0]        ; |part1|regn:reg_7|Q[0]        ; regout           ;
+; |part1|Equal2~2               ; |part1|Equal2~2               ; combout          ;
+; |part1|Equal2~3               ; |part1|Equal2~3               ; combout          ;
+; |part1|regn:reg_5|Q[0]        ; |part1|regn:reg_5|Q[0]        ; regout           ;
+; |part1|Equal6~0               ; |part1|Equal6~0               ; combout          ;
+; |part1|regn:reg_1|Q[0]        ; |part1|regn:reg_1|Q[0]        ; regout           ;
+; |part1|BusWires[0]~4          ; |part1|BusWires[0]~4          ; combout          ;
+; |part1|Equal1~0               ; |part1|Equal1~0               ; combout          ;
+; |part1|Equal1~1               ; |part1|Equal1~1               ; combout          ;
+; |part1|regn:reg_6|Q[0]        ; |part1|regn:reg_6|Q[0]        ; regout           ;
+; |part1|BusWires[0]~5          ; |part1|BusWires[0]~5          ; combout          ;
+; |part1|BusWires[0]~7          ; |part1|BusWires[0]~7          ; combout          ;
+; |part1|BusWires[0]~8          ; |part1|BusWires[0]~8          ; combout          ;
+; |part1|BusWires[0]~9          ; |part1|BusWires[0]~9          ; combout          ;
+; |part1|regn:reg_4|Q[1]        ; |part1|regn:reg_4|Q[1]        ; regout           ;
+; |part1|regn:reg_3|Q[1]        ; |part1|regn:reg_3|Q[1]        ; regout           ;
+; |part1|BusWires[1]~12         ; |part1|BusWires[1]~12         ; combout          ;
+; |part1|regn:reg_7|Q[1]        ; |part1|regn:reg_7|Q[1]        ; regout           ;
+; |part1|regn:reg_6|Q[1]        ; |part1|regn:reg_6|Q[1]        ; regout           ;
+; |part1|BusWires[1]~13         ; |part1|BusWires[1]~13         ; combout          ;
+; |part1|regn:reg_2|Q[1]        ; |part1|regn:reg_2|Q[1]        ; regout           ;
+; |part1|regn:reg_5|Q[1]        ; |part1|regn:reg_5|Q[1]        ; regout           ;
+; |part1|BusWires[1]~14         ; |part1|BusWires[1]~14         ; combout          ;
+; |part1|regn:reg_1|Q[1]        ; |part1|regn:reg_1|Q[1]        ; regout           ;
+; |part1|BusWires[1]~15         ; |part1|BusWires[1]~15         ; combout          ;
+; |part1|regn:reg_0|Q[1]        ; |part1|regn:reg_0|Q[1]        ; regout           ;
+; |part1|BusWires[1]~16         ; |part1|BusWires[1]~16         ; combout          ;
+; |part1|BusWires[1]~17         ; |part1|BusWires[1]~17         ; combout          ;
+; |part1|BusWires[1]~18         ; |part1|BusWires[1]~18         ; combout          ;
+; |part1|regn:reg_4|Q[2]        ; |part1|regn:reg_4|Q[2]        ; regout           ;
+; |part1|regn:reg_3|Q[2]        ; |part1|regn:reg_3|Q[2]        ; regout           ;
+; |part1|BusWires[2]~19         ; |part1|BusWires[2]~19         ; combout          ;
+; |part1|regn:reg_7|Q[2]        ; |part1|regn:reg_7|Q[2]        ; regout           ;
+; |part1|regn:reg_6|Q[2]        ; |part1|regn:reg_6|Q[2]        ; regout           ;
+; |part1|BusWires[2]~20         ; |part1|BusWires[2]~20         ; combout          ;
+; |part1|regn:reg_2|Q[2]        ; |part1|regn:reg_2|Q[2]        ; regout           ;
+; |part1|regn:reg_5|Q[2]        ; |part1|regn:reg_5|Q[2]        ; regout           ;
+; |part1|BusWires[2]~21         ; |part1|BusWires[2]~21         ; combout          ;
+; |part1|regn:reg_1|Q[2]        ; |part1|regn:reg_1|Q[2]        ; regout           ;
+; |part1|BusWires[2]~22         ; |part1|BusWires[2]~22         ; combout          ;
+; |part1|regn:reg_4|Q[3]        ; |part1|regn:reg_4|Q[3]        ; regout           ;
+; |part1|regn:reg_3|Q[3]        ; |part1|regn:reg_3|Q[3]        ; regout           ;
+; |part1|BusWires[3]~26         ; |part1|BusWires[3]~26         ; combout          ;
+; |part1|regn:reg_7|Q[3]        ; |part1|regn:reg_7|Q[3]        ; regout           ;
+; |part1|regn:reg_6|Q[3]        ; |part1|regn:reg_6|Q[3]        ; regout           ;
+; |part1|BusWires[3]~27         ; |part1|BusWires[3]~27         ; combout          ;
+; |part1|regn:reg_2|Q[3]        ; |part1|regn:reg_2|Q[3]        ; regout           ;
+; |part1|regn:reg_5|Q[3]        ; |part1|regn:reg_5|Q[3]        ; regout           ;
+; |part1|BusWires[3]~28         ; |part1|BusWires[3]~28         ; combout          ;
+; |part1|regn:reg_1|Q[3]        ; |part1|regn:reg_1|Q[3]        ; regout           ;
+; |part1|BusWires[3]~29         ; |part1|BusWires[3]~29         ; combout          ;
+; |part1|regn:reg_0|Q[3]        ; |part1|regn:reg_0|Q[3]        ; regout           ;
+; |part1|BusWires[3]~30         ; |part1|BusWires[3]~30         ; combout          ;
+; |part1|BusWires[3]~31         ; |part1|BusWires[3]~31         ; combout          ;
+; |part1|BusWires[3]~32         ; |part1|BusWires[3]~32         ; combout          ;
+; |part1|regn:reg_4|Q[4]        ; |part1|regn:reg_4|Q[4]        ; regout           ;
+; |part1|regn:reg_3|Q[4]        ; |part1|regn:reg_3|Q[4]        ; regout           ;
+; |part1|BusWires[4]~33         ; |part1|BusWires[4]~33         ; combout          ;
+; |part1|regn:reg_7|Q[4]        ; |part1|regn:reg_7|Q[4]        ; regout           ;
+; |part1|regn:reg_6|Q[4]        ; |part1|regn:reg_6|Q[4]        ; regout           ;
+; |part1|BusWires[4]~34         ; |part1|BusWires[4]~34         ; combout          ;
+; |part1|regn:reg_2|Q[4]        ; |part1|regn:reg_2|Q[4]        ; regout           ;
+; |part1|regn:reg_5|Q[4]        ; |part1|regn:reg_5|Q[4]        ; regout           ;
+; |part1|BusWires[4]~35         ; |part1|BusWires[4]~35         ; combout          ;
+; |part1|regn:reg_1|Q[4]        ; |part1|regn:reg_1|Q[4]        ; regout           ;
+; |part1|BusWires[4]~36         ; |part1|BusWires[4]~36         ; combout          ;
+; |part1|regn:reg_0|Q[4]        ; |part1|regn:reg_0|Q[4]        ; regout           ;
+; |part1|BusWires[4]~37         ; |part1|BusWires[4]~37         ; combout          ;
+; |part1|BusWires[4]~38         ; |part1|BusWires[4]~38         ; combout          ;
+; |part1|BusWires[4]~39         ; |part1|BusWires[4]~39         ; combout          ;
+; |part1|regn:reg_4|Q[5]        ; |part1|regn:reg_4|Q[5]        ; regout           ;
+; |part1|regn:reg_3|Q[5]        ; |part1|regn:reg_3|Q[5]        ; regout           ;
+; |part1|BusWires[5]~40         ; |part1|BusWires[5]~40         ; combout          ;
+; |part1|regn:reg_7|Q[5]        ; |part1|regn:reg_7|Q[5]        ; regout           ;
+; |part1|regn:reg_6|Q[5]        ; |part1|regn:reg_6|Q[5]        ; regout           ;
+; |part1|BusWires[5]~41         ; |part1|BusWires[5]~41         ; combout          ;
+; |part1|regn:reg_2|Q[5]        ; |part1|regn:reg_2|Q[5]        ; regout           ;
+; |part1|regn:reg_5|Q[5]        ; |part1|regn:reg_5|Q[5]        ; regout           ;
+; |part1|BusWires[5]~42         ; |part1|BusWires[5]~42         ; combout          ;
+; |part1|regn:reg_1|Q[5]        ; |part1|regn:reg_1|Q[5]        ; regout           ;
+; |part1|BusWires[5]~43         ; |part1|BusWires[5]~43         ; combout          ;
+; |part1|regn:reg_0|Q[5]        ; |part1|regn:reg_0|Q[5]        ; regout           ;
+; |part1|BusWires[5]~44         ; |part1|BusWires[5]~44         ; combout          ;
+; |part1|BusWires[5]~45         ; |part1|BusWires[5]~45         ; combout          ;
+; |part1|BusWires[5]~46         ; |part1|BusWires[5]~46         ; combout          ;
+; |part1|regn:reg_4|Q[6]        ; |part1|regn:reg_4|Q[6]        ; regout           ;
+; |part1|regn:reg_3|Q[6]        ; |part1|regn:reg_3|Q[6]        ; regout           ;
+; |part1|BusWires[6]~47         ; |part1|BusWires[6]~47         ; combout          ;
+; |part1|regn:reg_7|Q[6]        ; |part1|regn:reg_7|Q[6]        ; regout           ;
+; |part1|regn:reg_6|Q[6]        ; |part1|regn:reg_6|Q[6]        ; regout           ;
+; |part1|BusWires[6]~48         ; |part1|BusWires[6]~48         ; combout          ;
+; |part1|regn:reg_2|Q[6]        ; |part1|regn:reg_2|Q[6]        ; regout           ;
+; |part1|regn:reg_5|Q[6]        ; |part1|regn:reg_5|Q[6]        ; regout           ;
+; |part1|BusWires[6]~49         ; |part1|BusWires[6]~49         ; combout          ;
+; |part1|regn:reg_1|Q[6]        ; |part1|regn:reg_1|Q[6]        ; regout           ;
+; |part1|BusWires[6]~50         ; |part1|BusWires[6]~50         ; combout          ;
+; |part1|regn:reg_0|Q[6]        ; |part1|regn:reg_0|Q[6]        ; regout           ;
+; |part1|BusWires[6]~51         ; |part1|BusWires[6]~51         ; combout          ;
+; |part1|BusWires[6]~52         ; |part1|BusWires[6]~52         ; combout          ;
+; |part1|regn:reg_4|Q[7]        ; |part1|regn:reg_4|Q[7]        ; regout           ;
+; |part1|regn:reg_3|Q[7]        ; |part1|regn:reg_3|Q[7]        ; regout           ;
+; |part1|BusWires[7]~54         ; |part1|BusWires[7]~54         ; combout          ;
+; |part1|regn:reg_7|Q[7]        ; |part1|regn:reg_7|Q[7]        ; regout           ;
+; |part1|regn:reg_6|Q[7]        ; |part1|regn:reg_6|Q[7]        ; regout           ;
+; |part1|BusWires[7]~55         ; |part1|BusWires[7]~55         ; combout          ;
+; |part1|regn:reg_2|Q[7]        ; |part1|regn:reg_2|Q[7]        ; regout           ;
+; |part1|regn:reg_5|Q[7]        ; |part1|regn:reg_5|Q[7]        ; regout           ;
+; |part1|BusWires[7]~56         ; |part1|BusWires[7]~56         ; combout          ;
+; |part1|regn:reg_1|Q[7]        ; |part1|regn:reg_1|Q[7]        ; regout           ;
+; |part1|BusWires[7]~57         ; |part1|BusWires[7]~57         ; combout          ;
+; |part1|regn:reg_0|Q[7]        ; |part1|regn:reg_0|Q[7]        ; regout           ;
+; |part1|BusWires[7]~58         ; |part1|BusWires[7]~58         ; combout          ;
+; |part1|BusWires[7]~59         ; |part1|BusWires[7]~59         ; combout          ;
+; |part1|BusWires[7]~60         ; |part1|BusWires[7]~60         ; combout          ;
+; |part1|regn:reg_4|Q[8]        ; |part1|regn:reg_4|Q[8]        ; regout           ;
+; |part1|regn:reg_3|Q[8]        ; |part1|regn:reg_3|Q[8]        ; regout           ;
+; |part1|BusWires[8]~61         ; |part1|BusWires[8]~61         ; combout          ;
+; |part1|BusWires[8]~62         ; |part1|BusWires[8]~62         ; combout          ;
+; |part1|regn:reg_7|Q[8]        ; |part1|regn:reg_7|Q[8]        ; regout           ;
+; |part1|regn:reg_6|Q[8]        ; |part1|regn:reg_6|Q[8]        ; regout           ;
+; |part1|BusWires[8]~63         ; |part1|BusWires[8]~63         ; combout          ;
+; |part1|regn:reg_2|Q[8]        ; |part1|regn:reg_2|Q[8]        ; regout           ;
+; |part1|regn:reg_5|Q[8]        ; |part1|regn:reg_5|Q[8]        ; regout           ;
+; |part1|BusWires[8]~64         ; |part1|BusWires[8]~64         ; combout          ;
+; |part1|regn:reg_0|Q[8]        ; |part1|regn:reg_0|Q[8]        ; regout           ;
+; |part1|BusWires[8]~65         ; |part1|BusWires[8]~65         ; combout          ;
+; |part1|regn:reg_1|Q[8]        ; |part1|regn:reg_1|Q[8]        ; regout           ;
+; |part1|BusWires[8]~66         ; |part1|BusWires[8]~66         ; combout          ;
+; |part1|BusWires[8]~67         ; |part1|BusWires[8]~67         ; combout          ;
+; |part1|Selector12~0           ; |part1|Selector12~0           ; combout          ;
+; |part1|Selector11~0           ; |part1|Selector11~0           ; combout          ;
+; |part1|Mux28~0                ; |part1|Mux28~0                ; combout          ;
+; |part1|regn:A_reg|Q[0]        ; |part1|regn:A_reg|Q[0]        ; regout           ;
+; |part1|Tstep_Q~10             ; |part1|Tstep_Q~10             ; combout          ;
+; |part1|Selector10~0           ; |part1|Selector10~0           ; combout          ;
+; |part1|Add0~1                 ; |part1|Add0~1                 ; combout          ;
+; |part1|regn:A_reg|Q[1]        ; |part1|regn:A_reg|Q[1]        ; regout           ;
+; |part1|regn:A_reg|Q[2]        ; |part1|regn:A_reg|Q[2]        ; regout           ;
+; |part1|Add0~3                 ; |part1|Add0~3                 ; combout          ;
+; |part1|regn:A_reg|Q[3]        ; |part1|regn:A_reg|Q[3]        ; regout           ;
+; |part1|Add0~4                 ; |part1|Add0~4                 ; combout          ;
+; |part1|regn:A_reg|Q[4]        ; |part1|regn:A_reg|Q[4]        ; regout           ;
+; |part1|Add0~5                 ; |part1|Add0~5                 ; combout          ;
+; |part1|regn:A_reg|Q[5]        ; |part1|regn:A_reg|Q[5]        ; regout           ;
+; |part1|regn:A_reg|Q[6]        ; |part1|regn:A_reg|Q[6]        ; regout           ;
+; |part1|Add0~7                 ; |part1|Add0~7                 ; combout          ;
+; |part1|regn:A_reg|Q[7]        ; |part1|regn:A_reg|Q[7]        ; regout           ;
+; |part1|AddSub~0               ; |part1|AddSub~0               ; combout          ;
+; |part1|Add0~8                 ; |part1|Add0~8                 ; combout          ;
+; |part1|regn:A_reg|Q[8]        ; |part1|regn:A_reg|Q[8]        ; regout           ;
+; |part1|Ain~0                  ; |part1|Ain~0                  ; combout          ;
+; |part1|Equal2~4               ; |part1|Equal2~4               ; combout          ;
+; |part1|Selector13~2           ; |part1|Selector13~2           ; combout          ;
+; |part1|Selector16~2           ; |part1|Selector16~2           ; combout          ;
+; |part1|Selector14~2           ; |part1|Selector14~2           ; combout          ;
+; |part1|Selector15~3           ; |part1|Selector15~3           ; combout          ;
+; |part1|LEDR[1]                ; |part1|LEDR[1]                ; padio            ;
+; |part1|LEDR[3]                ; |part1|LEDR[3]                ; padio            ;
+; |part1|LEDR[4]                ; |part1|LEDR[4]                ; padio            ;
+; |part1|LEDR[5]                ; |part1|LEDR[5]                ; padio            ;
+; |part1|LEDR[7]                ; |part1|LEDR[7]                ; padio            ;
+; |part1|LEDR[8]                ; |part1|LEDR[8]                ; padio            ;
+; |part1|SW[1]                  ; |part1|SW[1]~corein           ; combout          ;
+; |part1|SW[3]                  ; |part1|SW[3]~corein           ; combout          ;
+; |part1|SW[4]                  ; |part1|SW[4]~corein           ; combout          ;
+; |part1|SW[5]                  ; |part1|SW[5]~corein           ; combout          ;
+; |part1|SW[7]                  ; |part1|SW[7]~corein           ; combout          ;
+; |part1|SW[8]                  ; |part1|SW[8]~corein           ; combout          ;
+; |part1|regn:reg_1|Q[1]~feeder ; |part1|regn:reg_1|Q[1]~feeder ; combout          ;
+; |part1|regn:reg_3|Q[1]~feeder ; |part1|regn:reg_3|Q[1]~feeder ; combout          ;
+; |part1|regn:reg_6|Q[3]~feeder ; |part1|regn:reg_6|Q[3]~feeder ; combout          ;
+; |part1|regn:reg_2|Q[4]~feeder ; |part1|regn:reg_2|Q[4]~feeder ; combout          ;
+; |part1|regn:reg_3|Q[4]~feeder ; |part1|regn:reg_3|Q[4]~feeder ; combout          ;
+; |part1|regn:reg_0|Q[4]~feeder ; |part1|regn:reg_0|Q[4]~feeder ; combout          ;
+; |part1|regn:A_reg|Q[4]~feeder ; |part1|regn:A_reg|Q[4]~feeder ; combout          ;
+; |part1|regn:reg_1|Q[5]~feeder ; |part1|regn:reg_1|Q[5]~feeder ; combout          ;
+; |part1|regn:reg_2|Q[5]~feeder ; |part1|regn:reg_2|Q[5]~feeder ; combout          ;
+; |part1|regn:reg_7|Q[5]~feeder ; |part1|regn:reg_7|Q[5]~feeder ; combout          ;
+; |part1|regn:reg_3|Q[5]~feeder ; |part1|regn:reg_3|Q[5]~feeder ; combout          ;
+; |part1|regn:reg_1|Q[7]~feeder ; |part1|regn:reg_1|Q[7]~feeder ; combout          ;
+; |part1|regn:reg_2|Q[7]~feeder ; |part1|regn:reg_2|Q[7]~feeder ; combout          ;
+; |part1|regn:reg_6|Q[7]~feeder ; |part1|regn:reg_6|Q[7]~feeder ; combout          ;
+; |part1|regn:reg_5|Q[7]~feeder ; |part1|regn:reg_5|Q[7]~feeder ; combout          ;
+; |part1|regn:reg_3|Q[7]~feeder ; |part1|regn:reg_3|Q[7]~feeder ; combout          ;
+; |part1|regn:reg_4|Q[8]~feeder ; |part1|regn:reg_4|Q[8]~feeder ; combout          ;
+; |part1|regn:reg_2|Q[8]~feeder ; |part1|regn:reg_2|Q[8]~feeder ; combout          ;
++-------------------------------+-------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                         ;
++-------------------------------+-------------------------------+------------------+
+; Node Name                     ; Output Port Name              ; Output Port Type ;
++-------------------------------+-------------------------------+------------------+
+; |part1|regn:G_reg|Q[0]        ; |part1|regn:G_reg|Q[0]        ; regout           ;
+; |part1|regn:G_reg|Q[1]        ; |part1|regn:G_reg|Q[1]        ; regout           ;
+; |part1|regn:G_reg|Q[2]        ; |part1|regn:G_reg|Q[2]        ; regout           ;
+; |part1|regn:G_reg|Q[3]        ; |part1|regn:G_reg|Q[3]        ; regout           ;
+; |part1|regn:G_reg|Q[4]        ; |part1|regn:G_reg|Q[4]        ; regout           ;
+; |part1|regn:G_reg|Q[5]        ; |part1|regn:G_reg|Q[5]        ; regout           ;
+; |part1|regn:G_reg|Q[6]        ; |part1|regn:G_reg|Q[6]        ; regout           ;
+; |part1|regn:G_reg|Q[7]        ; |part1|regn:G_reg|Q[7]        ; regout           ;
+; |part1|regn:G_reg|Q[8]        ; |part1|regn:G_reg|Q[8]        ; regout           ;
+; |part1|regn:G_reg|Q[0]~10     ; |part1|regn:G_reg|Q[0]~10     ; cout             ;
+; |part1|regn:G_reg|Q[0]~11     ; |part1|regn:G_reg|Q[0]~12     ; cout             ;
+; |part1|regn:G_reg|Q[1]~13     ; |part1|regn:G_reg|Q[1]~13     ; combout          ;
+; |part1|regn:G_reg|Q[1]~13     ; |part1|regn:G_reg|Q[1]~14     ; cout             ;
+; |part1|regn:G_reg|Q[2]~15     ; |part1|regn:G_reg|Q[2]~16     ; cout             ;
+; |part1|regn:G_reg|Q[3]~17     ; |part1|regn:G_reg|Q[3]~17     ; combout          ;
+; |part1|regn:G_reg|Q[3]~17     ; |part1|regn:G_reg|Q[3]~18     ; cout             ;
+; |part1|regn:G_reg|Q[4]~19     ; |part1|regn:G_reg|Q[4]~19     ; combout          ;
+; |part1|regn:G_reg|Q[4]~19     ; |part1|regn:G_reg|Q[4]~20     ; cout             ;
+; |part1|regn:G_reg|Q[5]~21     ; |part1|regn:G_reg|Q[5]~21     ; combout          ;
+; |part1|regn:G_reg|Q[5]~21     ; |part1|regn:G_reg|Q[5]~22     ; cout             ;
+; |part1|regn:G_reg|Q[6]~23     ; |part1|regn:G_reg|Q[6]~24     ; cout             ;
+; |part1|regn:G_reg|Q[7]~25     ; |part1|regn:G_reg|Q[7]~25     ; combout          ;
+; |part1|regn:G_reg|Q[7]~25     ; |part1|regn:G_reg|Q[7]~26     ; cout             ;
+; |part1|regn:G_reg|Q[8]~27     ; |part1|regn:G_reg|Q[8]~27     ; combout          ;
+; |part1|regn:IR_reg|Q[7]       ; |part1|regn:IR_reg|Q[7]       ; regout           ;
+; |part1|regn:IR_reg|Q[3]       ; |part1|regn:IR_reg|Q[3]       ; regout           ;
+; |part1|regn:IR_reg|Q[8]       ; |part1|regn:IR_reg|Q[8]       ; regout           ;
+; |part1|Selector1~0            ; |part1|Selector1~0            ; combout          ;
+; |part1|regn:IR_reg|Q[4]       ; |part1|regn:IR_reg|Q[4]       ; regout           ;
+; |part1|regn:IR_reg|Q[5]       ; |part1|regn:IR_reg|Q[5]       ; regout           ;
+; |part1|Selector1~1            ; |part1|Selector1~1            ; combout          ;
+; |part1|Tstep_Q.T2             ; |part1|Tstep_Q.T2             ; regout           ;
+; |part1|Gin~0                  ; |part1|Gin~0                  ; combout          ;
+; |part1|regn:IR_reg|Q[0]       ; |part1|regn:IR_reg|Q[0]       ; regout           ;
+; |part1|regn:IR_reg|Q[1]       ; |part1|regn:IR_reg|Q[1]       ; regout           ;
+; |part1|regn:IR_reg|Q[2]       ; |part1|regn:IR_reg|Q[2]       ; regout           ;
+; |part1|Selector2~0            ; |part1|Selector2~0            ; combout          ;
+; |part1|Selector6~0            ; |part1|Selector6~0            ; combout          ;
+; |part1|Selector8~0            ; |part1|Selector8~0            ; combout          ;
+; |part1|Selector6~1            ; |part1|Selector6~1            ; combout          ;
+; |part1|Selector5~0            ; |part1|Selector5~0            ; combout          ;
+; |part1|Selector15~2           ; |part1|Selector15~2           ; combout          ;
+; |part1|Selector7~0            ; |part1|Selector7~0            ; combout          ;
+; |part1|Selector8~1            ; |part1|Selector8~1            ; combout          ;
+; |part1|Selector4~0            ; |part1|Selector4~0            ; combout          ;
+; |part1|Selector2~1            ; |part1|Selector2~1            ; combout          ;
+; |part1|Selector4~1            ; |part1|Selector4~1            ; combout          ;
+; |part1|Selector5~1            ; |part1|Selector5~1            ; combout          ;
+; |part1|Equal4~0               ; |part1|Equal4~0               ; combout          ;
+; |part1|Selector3~0            ; |part1|Selector3~0            ; combout          ;
+; |part1|Selector3~1            ; |part1|Selector3~1            ; combout          ;
+; |part1|Selector2~2            ; |part1|Selector2~2            ; combout          ;
+; |part1|Selector2~3            ; |part1|Selector2~3            ; combout          ;
+; |part1|Equal4~1               ; |part1|Equal4~1               ; combout          ;
+; |part1|Equal3~1               ; |part1|Equal3~1               ; combout          ;
+; |part1|Equal3~2               ; |part1|Equal3~2               ; combout          ;
+; |part1|regn:reg_4|Q[0]        ; |part1|regn:reg_4|Q[0]        ; regout           ;
+; |part1|regn:reg_3|Q[0]        ; |part1|regn:reg_3|Q[0]        ; regout           ;
+; |part1|BusWires[0]~0          ; |part1|BusWires[0]~0          ; combout          ;
+; |part1|Equal5~0               ; |part1|Equal5~0               ; combout          ;
+; |part1|Equal5~1               ; |part1|Equal5~1               ; combout          ;
+; |part1|regn:reg_2|Q[0]        ; |part1|regn:reg_2|Q[0]        ; regout           ;
+; |part1|Tstep_Q.T3             ; |part1|Tstep_Q.T3             ; regout           ;
+; |part1|BusWires[0]~1          ; |part1|BusWires[0]~1          ; combout          ;
+; |part1|BusWires[0]~2          ; |part1|BusWires[0]~2          ; combout          ;
+; |part1|Equal0~0               ; |part1|Equal0~0               ; combout          ;
+; |part1|Equal0~1               ; |part1|Equal0~1               ; combout          ;
+; |part1|Equal0~2               ; |part1|Equal0~2               ; combout          ;
+; |part1|regn:reg_7|Q[0]        ; |part1|regn:reg_7|Q[0]        ; regout           ;
+; |part1|Equal2~2               ; |part1|Equal2~2               ; combout          ;
+; |part1|regn:reg_0|Q[0]        ; |part1|regn:reg_0|Q[0]        ; regout           ;
+; |part1|Equal2~3               ; |part1|Equal2~3               ; combout          ;
+; |part1|regn:reg_5|Q[0]        ; |part1|regn:reg_5|Q[0]        ; regout           ;
+; |part1|Equal6~0               ; |part1|Equal6~0               ; combout          ;
+; |part1|regn:reg_1|Q[0]        ; |part1|regn:reg_1|Q[0]        ; regout           ;
+; |part1|BusWires[0]~4          ; |part1|BusWires[0]~4          ; combout          ;
+; |part1|Equal1~0               ; |part1|Equal1~0               ; combout          ;
+; |part1|Equal1~1               ; |part1|Equal1~1               ; combout          ;
+; |part1|regn:reg_6|Q[0]        ; |part1|regn:reg_6|Q[0]        ; regout           ;
+; |part1|BusWires[0]~5          ; |part1|BusWires[0]~5          ; combout          ;
+; |part1|BusWires[0]~7          ; |part1|BusWires[0]~7          ; combout          ;
+; |part1|BusWires[0]~8          ; |part1|BusWires[0]~8          ; combout          ;
+; |part1|BusWires[0]~9          ; |part1|BusWires[0]~9          ; combout          ;
+; |part1|regn:reg_4|Q[1]        ; |part1|regn:reg_4|Q[1]        ; regout           ;
+; |part1|regn:reg_3|Q[1]        ; |part1|regn:reg_3|Q[1]        ; regout           ;
+; |part1|BusWires[1]~12         ; |part1|BusWires[1]~12         ; combout          ;
+; |part1|regn:reg_7|Q[1]        ; |part1|regn:reg_7|Q[1]        ; regout           ;
+; |part1|regn:reg_6|Q[1]        ; |part1|regn:reg_6|Q[1]        ; regout           ;
+; |part1|BusWires[1]~13         ; |part1|BusWires[1]~13         ; combout          ;
+; |part1|regn:reg_2|Q[1]        ; |part1|regn:reg_2|Q[1]        ; regout           ;
+; |part1|regn:reg_5|Q[1]        ; |part1|regn:reg_5|Q[1]        ; regout           ;
+; |part1|BusWires[1]~14         ; |part1|BusWires[1]~14         ; combout          ;
+; |part1|regn:reg_1|Q[1]        ; |part1|regn:reg_1|Q[1]        ; regout           ;
+; |part1|BusWires[1]~15         ; |part1|BusWires[1]~15         ; combout          ;
+; |part1|regn:reg_0|Q[1]        ; |part1|regn:reg_0|Q[1]        ; regout           ;
+; |part1|BusWires[1]~16         ; |part1|BusWires[1]~16         ; combout          ;
+; |part1|BusWires[1]~17         ; |part1|BusWires[1]~17         ; combout          ;
+; |part1|BusWires[1]~18         ; |part1|BusWires[1]~18         ; combout          ;
+; |part1|regn:reg_4|Q[2]        ; |part1|regn:reg_4|Q[2]        ; regout           ;
+; |part1|regn:reg_3|Q[2]        ; |part1|regn:reg_3|Q[2]        ; regout           ;
+; |part1|BusWires[2]~19         ; |part1|BusWires[2]~19         ; combout          ;
+; |part1|regn:reg_7|Q[2]        ; |part1|regn:reg_7|Q[2]        ; regout           ;
+; |part1|regn:reg_6|Q[2]        ; |part1|regn:reg_6|Q[2]        ; regout           ;
+; |part1|BusWires[2]~20         ; |part1|BusWires[2]~20         ; combout          ;
+; |part1|regn:reg_2|Q[2]        ; |part1|regn:reg_2|Q[2]        ; regout           ;
+; |part1|regn:reg_5|Q[2]        ; |part1|regn:reg_5|Q[2]        ; regout           ;
+; |part1|BusWires[2]~21         ; |part1|BusWires[2]~21         ; combout          ;
+; |part1|regn:reg_1|Q[2]        ; |part1|regn:reg_1|Q[2]        ; regout           ;
+; |part1|BusWires[2]~22         ; |part1|BusWires[2]~22         ; combout          ;
+; |part1|regn:reg_0|Q[2]        ; |part1|regn:reg_0|Q[2]        ; regout           ;
+; |part1|regn:reg_4|Q[3]        ; |part1|regn:reg_4|Q[3]        ; regout           ;
+; |part1|regn:reg_3|Q[3]        ; |part1|regn:reg_3|Q[3]        ; regout           ;
+; |part1|BusWires[3]~26         ; |part1|BusWires[3]~26         ; combout          ;
+; |part1|regn:reg_7|Q[3]        ; |part1|regn:reg_7|Q[3]        ; regout           ;
+; |part1|regn:reg_6|Q[3]        ; |part1|regn:reg_6|Q[3]        ; regout           ;
+; |part1|BusWires[3]~27         ; |part1|BusWires[3]~27         ; combout          ;
+; |part1|regn:reg_2|Q[3]        ; |part1|regn:reg_2|Q[3]        ; regout           ;
+; |part1|regn:reg_5|Q[3]        ; |part1|regn:reg_5|Q[3]        ; regout           ;
+; |part1|BusWires[3]~28         ; |part1|BusWires[3]~28         ; combout          ;
+; |part1|regn:reg_1|Q[3]        ; |part1|regn:reg_1|Q[3]        ; regout           ;
+; |part1|BusWires[3]~29         ; |part1|BusWires[3]~29         ; combout          ;
+; |part1|regn:reg_0|Q[3]        ; |part1|regn:reg_0|Q[3]        ; regout           ;
+; |part1|BusWires[3]~30         ; |part1|BusWires[3]~30         ; combout          ;
+; |part1|BusWires[3]~31         ; |part1|BusWires[3]~31         ; combout          ;
+; |part1|BusWires[3]~32         ; |part1|BusWires[3]~32         ; combout          ;
+; |part1|regn:reg_4|Q[4]        ; |part1|regn:reg_4|Q[4]        ; regout           ;
+; |part1|regn:reg_3|Q[4]        ; |part1|regn:reg_3|Q[4]        ; regout           ;
+; |part1|BusWires[4]~33         ; |part1|BusWires[4]~33         ; combout          ;
+; |part1|regn:reg_7|Q[4]        ; |part1|regn:reg_7|Q[4]        ; regout           ;
+; |part1|regn:reg_6|Q[4]        ; |part1|regn:reg_6|Q[4]        ; regout           ;
+; |part1|BusWires[4]~34         ; |part1|BusWires[4]~34         ; combout          ;
+; |part1|regn:reg_2|Q[4]        ; |part1|regn:reg_2|Q[4]        ; regout           ;
+; |part1|regn:reg_5|Q[4]        ; |part1|regn:reg_5|Q[4]        ; regout           ;
+; |part1|BusWires[4]~35         ; |part1|BusWires[4]~35         ; combout          ;
+; |part1|regn:reg_1|Q[4]        ; |part1|regn:reg_1|Q[4]        ; regout           ;
+; |part1|BusWires[4]~36         ; |part1|BusWires[4]~36         ; combout          ;
+; |part1|regn:reg_0|Q[4]        ; |part1|regn:reg_0|Q[4]        ; regout           ;
+; |part1|BusWires[4]~37         ; |part1|BusWires[4]~37         ; combout          ;
+; |part1|BusWires[4]~38         ; |part1|BusWires[4]~38         ; combout          ;
+; |part1|BusWires[4]~39         ; |part1|BusWires[4]~39         ; combout          ;
+; |part1|regn:reg_4|Q[5]        ; |part1|regn:reg_4|Q[5]        ; regout           ;
+; |part1|regn:reg_3|Q[5]        ; |part1|regn:reg_3|Q[5]        ; regout           ;
+; |part1|BusWires[5]~40         ; |part1|BusWires[5]~40         ; combout          ;
+; |part1|regn:reg_7|Q[5]        ; |part1|regn:reg_7|Q[5]        ; regout           ;
+; |part1|regn:reg_6|Q[5]        ; |part1|regn:reg_6|Q[5]        ; regout           ;
+; |part1|BusWires[5]~41         ; |part1|BusWires[5]~41         ; combout          ;
+; |part1|regn:reg_2|Q[5]        ; |part1|regn:reg_2|Q[5]        ; regout           ;
+; |part1|regn:reg_5|Q[5]        ; |part1|regn:reg_5|Q[5]        ; regout           ;
+; |part1|BusWires[5]~42         ; |part1|BusWires[5]~42         ; combout          ;
+; |part1|regn:reg_1|Q[5]        ; |part1|regn:reg_1|Q[5]        ; regout           ;
+; |part1|BusWires[5]~43         ; |part1|BusWires[5]~43         ; combout          ;
+; |part1|regn:reg_0|Q[5]        ; |part1|regn:reg_0|Q[5]        ; regout           ;
+; |part1|BusWires[5]~44         ; |part1|BusWires[5]~44         ; combout          ;
+; |part1|BusWires[5]~45         ; |part1|BusWires[5]~45         ; combout          ;
+; |part1|BusWires[5]~46         ; |part1|BusWires[5]~46         ; combout          ;
+; |part1|regn:reg_4|Q[6]        ; |part1|regn:reg_4|Q[6]        ; regout           ;
+; |part1|regn:reg_3|Q[6]        ; |part1|regn:reg_3|Q[6]        ; regout           ;
+; |part1|BusWires[6]~47         ; |part1|BusWires[6]~47         ; combout          ;
+; |part1|regn:reg_7|Q[6]        ; |part1|regn:reg_7|Q[6]        ; regout           ;
+; |part1|regn:reg_6|Q[6]        ; |part1|regn:reg_6|Q[6]        ; regout           ;
+; |part1|BusWires[6]~48         ; |part1|BusWires[6]~48         ; combout          ;
+; |part1|regn:reg_2|Q[6]        ; |part1|regn:reg_2|Q[6]        ; regout           ;
+; |part1|regn:reg_5|Q[6]        ; |part1|regn:reg_5|Q[6]        ; regout           ;
+; |part1|BusWires[6]~49         ; |part1|BusWires[6]~49         ; combout          ;
+; |part1|regn:reg_1|Q[6]        ; |part1|regn:reg_1|Q[6]        ; regout           ;
+; |part1|BusWires[6]~50         ; |part1|BusWires[6]~50         ; combout          ;
+; |part1|regn:reg_0|Q[6]        ; |part1|regn:reg_0|Q[6]        ; regout           ;
+; |part1|BusWires[6]~51         ; |part1|BusWires[6]~51         ; combout          ;
+; |part1|BusWires[6]~52         ; |part1|BusWires[6]~52         ; combout          ;
+; |part1|regn:reg_4|Q[7]        ; |part1|regn:reg_4|Q[7]        ; regout           ;
+; |part1|regn:reg_3|Q[7]        ; |part1|regn:reg_3|Q[7]        ; regout           ;
+; |part1|BusWires[7]~54         ; |part1|BusWires[7]~54         ; combout          ;
+; |part1|regn:reg_7|Q[7]        ; |part1|regn:reg_7|Q[7]        ; regout           ;
+; |part1|regn:reg_6|Q[7]        ; |part1|regn:reg_6|Q[7]        ; regout           ;
+; |part1|BusWires[7]~55         ; |part1|BusWires[7]~55         ; combout          ;
+; |part1|regn:reg_2|Q[7]        ; |part1|regn:reg_2|Q[7]        ; regout           ;
+; |part1|regn:reg_5|Q[7]        ; |part1|regn:reg_5|Q[7]        ; regout           ;
+; |part1|BusWires[7]~56         ; |part1|BusWires[7]~56         ; combout          ;
+; |part1|regn:reg_1|Q[7]        ; |part1|regn:reg_1|Q[7]        ; regout           ;
+; |part1|BusWires[7]~57         ; |part1|BusWires[7]~57         ; combout          ;
+; |part1|regn:reg_0|Q[7]        ; |part1|regn:reg_0|Q[7]        ; regout           ;
+; |part1|BusWires[7]~58         ; |part1|BusWires[7]~58         ; combout          ;
+; |part1|BusWires[7]~59         ; |part1|BusWires[7]~59         ; combout          ;
+; |part1|BusWires[7]~60         ; |part1|BusWires[7]~60         ; combout          ;
+; |part1|regn:reg_4|Q[8]        ; |part1|regn:reg_4|Q[8]        ; regout           ;
+; |part1|regn:reg_3|Q[8]        ; |part1|regn:reg_3|Q[8]        ; regout           ;
+; |part1|BusWires[8]~61         ; |part1|BusWires[8]~61         ; combout          ;
+; |part1|BusWires[8]~62         ; |part1|BusWires[8]~62         ; combout          ;
+; |part1|regn:reg_7|Q[8]        ; |part1|regn:reg_7|Q[8]        ; regout           ;
+; |part1|regn:reg_6|Q[8]        ; |part1|regn:reg_6|Q[8]        ; regout           ;
+; |part1|BusWires[8]~63         ; |part1|BusWires[8]~63         ; combout          ;
+; |part1|regn:reg_2|Q[8]        ; |part1|regn:reg_2|Q[8]        ; regout           ;
+; |part1|regn:reg_5|Q[8]        ; |part1|regn:reg_5|Q[8]        ; regout           ;
+; |part1|BusWires[8]~64         ; |part1|BusWires[8]~64         ; combout          ;
+; |part1|regn:reg_0|Q[8]        ; |part1|regn:reg_0|Q[8]        ; regout           ;
+; |part1|BusWires[8]~65         ; |part1|BusWires[8]~65         ; combout          ;
+; |part1|regn:reg_1|Q[8]        ; |part1|regn:reg_1|Q[8]        ; regout           ;
+; |part1|BusWires[8]~66         ; |part1|BusWires[8]~66         ; combout          ;
+; |part1|BusWires[8]~67         ; |part1|BusWires[8]~67         ; combout          ;
+; |part1|Selector12~0           ; |part1|Selector12~0           ; combout          ;
+; |part1|Selector11~0           ; |part1|Selector11~0           ; combout          ;
+; |part1|Mux28~0                ; |part1|Mux28~0                ; combout          ;
+; |part1|regn:A_reg|Q[0]        ; |part1|regn:A_reg|Q[0]        ; regout           ;
+; |part1|Tstep_Q~10             ; |part1|Tstep_Q~10             ; combout          ;
+; |part1|Selector10~0           ; |part1|Selector10~0           ; combout          ;
+; |part1|Add0~1                 ; |part1|Add0~1                 ; combout          ;
+; |part1|regn:A_reg|Q[1]        ; |part1|regn:A_reg|Q[1]        ; regout           ;
+; |part1|regn:A_reg|Q[2]        ; |part1|regn:A_reg|Q[2]        ; regout           ;
+; |part1|Add0~3                 ; |part1|Add0~3                 ; combout          ;
+; |part1|regn:A_reg|Q[3]        ; |part1|regn:A_reg|Q[3]        ; regout           ;
+; |part1|Add0~4                 ; |part1|Add0~4                 ; combout          ;
+; |part1|regn:A_reg|Q[4]        ; |part1|regn:A_reg|Q[4]        ; regout           ;
+; |part1|Add0~5                 ; |part1|Add0~5                 ; combout          ;
+; |part1|regn:A_reg|Q[5]        ; |part1|regn:A_reg|Q[5]        ; regout           ;
+; |part1|regn:A_reg|Q[6]        ; |part1|regn:A_reg|Q[6]        ; regout           ;
+; |part1|Add0~7                 ; |part1|Add0~7                 ; combout          ;
+; |part1|regn:A_reg|Q[7]        ; |part1|regn:A_reg|Q[7]        ; regout           ;
+; |part1|AddSub~0               ; |part1|AddSub~0               ; combout          ;
+; |part1|Add0~8                 ; |part1|Add0~8                 ; combout          ;
+; |part1|regn:A_reg|Q[8]        ; |part1|regn:A_reg|Q[8]        ; regout           ;
+; |part1|Ain~0                  ; |part1|Ain~0                  ; combout          ;
+; |part1|Equal2~4               ; |part1|Equal2~4               ; combout          ;
+; |part1|Selector13~2           ; |part1|Selector13~2           ; combout          ;
+; |part1|Selector16~2           ; |part1|Selector16~2           ; combout          ;
+; |part1|Selector14~2           ; |part1|Selector14~2           ; combout          ;
+; |part1|Selector15~3           ; |part1|Selector15~3           ; combout          ;
+; |part1|LEDR[1]                ; |part1|LEDR[1]                ; padio            ;
+; |part1|LEDR[3]                ; |part1|LEDR[3]                ; padio            ;
+; |part1|LEDR[4]                ; |part1|LEDR[4]                ; padio            ;
+; |part1|LEDR[5]                ; |part1|LEDR[5]                ; padio            ;
+; |part1|LEDR[7]                ; |part1|LEDR[7]                ; padio            ;
+; |part1|LEDR[8]                ; |part1|LEDR[8]                ; padio            ;
+; |part1|SW[1]                  ; |part1|SW[1]~corein           ; combout          ;
+; |part1|SW[3]                  ; |part1|SW[3]~corein           ; combout          ;
+; |part1|SW[4]                  ; |part1|SW[4]~corein           ; combout          ;
+; |part1|SW[5]                  ; |part1|SW[5]~corein           ; combout          ;
+; |part1|SW[7]                  ; |part1|SW[7]~corein           ; combout          ;
+; |part1|SW[8]                  ; |part1|SW[8]~corein           ; combout          ;
+; |part1|KEY[0]                 ; |part1|KEY[0]~corein          ; combout          ;
+; |part1|regn:reg_1|Q[1]~feeder ; |part1|regn:reg_1|Q[1]~feeder ; combout          ;
+; |part1|regn:reg_3|Q[1]~feeder ; |part1|regn:reg_3|Q[1]~feeder ; combout          ;
+; |part1|regn:reg_6|Q[3]~feeder ; |part1|regn:reg_6|Q[3]~feeder ; combout          ;
+; |part1|regn:reg_2|Q[4]~feeder ; |part1|regn:reg_2|Q[4]~feeder ; combout          ;
+; |part1|regn:reg_3|Q[4]~feeder ; |part1|regn:reg_3|Q[4]~feeder ; combout          ;
+; |part1|regn:reg_0|Q[4]~feeder ; |part1|regn:reg_0|Q[4]~feeder ; combout          ;
+; |part1|regn:A_reg|Q[4]~feeder ; |part1|regn:A_reg|Q[4]~feeder ; combout          ;
+; |part1|regn:reg_1|Q[5]~feeder ; |part1|regn:reg_1|Q[5]~feeder ; combout          ;
+; |part1|regn:reg_2|Q[5]~feeder ; |part1|regn:reg_2|Q[5]~feeder ; combout          ;
+; |part1|regn:reg_7|Q[5]~feeder ; |part1|regn:reg_7|Q[5]~feeder ; combout          ;
+; |part1|regn:reg_3|Q[5]~feeder ; |part1|regn:reg_3|Q[5]~feeder ; combout          ;
+; |part1|regn:reg_1|Q[7]~feeder ; |part1|regn:reg_1|Q[7]~feeder ; combout          ;
+; |part1|regn:reg_2|Q[7]~feeder ; |part1|regn:reg_2|Q[7]~feeder ; combout          ;
+; |part1|regn:reg_6|Q[7]~feeder ; |part1|regn:reg_6|Q[7]~feeder ; combout          ;
+; |part1|regn:reg_5|Q[7]~feeder ; |part1|regn:reg_5|Q[7]~feeder ; combout          ;
+; |part1|regn:reg_3|Q[7]~feeder ; |part1|regn:reg_3|Q[7]~feeder ; combout          ;
+; |part1|regn:reg_4|Q[8]~feeder ; |part1|regn:reg_4|Q[8]~feeder ; combout          ;
+; |part1|regn:reg_2|Q[8]~feeder ; |part1|regn:reg_2|Q[8]~feeder ; combout          ;
++-------------------------------+-------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Nov 09 23:16:51 2020
+Info: Command: quartus_sim --simulation_results_format=VWF part1 -c part1
+Info (324025): Using vector source file "C:/Labs/Week8/Lab9/output_files/sim.vwf"
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Xreg[7]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Xreg[6]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Xreg[5]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Xreg[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Xreg[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Xreg[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Xreg[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Xreg[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Yreg[7]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Yreg[6]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Yreg[5]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Yreg[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Yreg[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Yreg[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Yreg[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Yreg[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "A[8]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "A[7]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "A[6]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "A[5]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "A[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "A[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "A[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "A[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "A[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "DIN[8]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "DIN[7]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "DIN[6]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "DIN[5]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "DIN[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "DIN[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "DIN[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "DIN[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "DIN[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "I[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "I[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "I[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R0[8]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R0[7]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R0[6]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R0[5]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R0[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R0[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R0[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R0[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R0[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R1[8]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R1[7]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R1[6]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R1[5]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R1[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R1[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R1[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R1[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R1[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R2[8]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R2[7]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R2[6]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R2[5]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R2[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R2[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R2[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R2[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R2[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R3[8]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R3[7]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R3[6]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R3[5]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R3[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R3[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R3[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R3[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "R3[0]" in design.
+Warning (328016): Wrong node type and/or width for node "|part1|Tstep_Q" in vector source file. Node in design is of type Enum and of width 1, but node in vector source file is of type 9-Level and of width 1.
+Warning (328018): Signal name "|part1|Tstep_Q" changed to enum type
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      15.74 %
+Info (328052): Number of transitions in simulation is 365
+Info (324045): Vector file part1.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 75 warnings
+    Info: Peak virtual memory: 4469 megabytes
+    Info: Processing ended: Mon Nov 09 23:16:52 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

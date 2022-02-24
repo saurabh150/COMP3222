@@ -1,0 +1,31 @@
+|L3P22
+SW[0] => L3P2:Latch.D
+SW[1] => L3P2:Latch.Clk
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+LEDG[0] <= L3P2:Latch.Q
+LEDG[1] <= <GND>
+LEDG[2] <= <GND>
+LEDG[3] <= <GND>
+LEDG[4] <= <GND>
+LEDG[5] <= <GND>
+LEDG[6] <= <GND>
+LEDG[7] <= <GND>
+LEDG[8] <= <GND>
+LEDG[9] <= <GND>
+
+
+|L3P22|L3P2:Latch
+Clk => S_g.IN0
+Clk => R_g.IN1
+D => S_g.IN1
+D => R.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

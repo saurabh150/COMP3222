@@ -1,0 +1,16 @@
+Quartus II Archive log --	C:/New folder/Week 2/L01P03/output_files/Jain-5204308-L01P03.qarlog
+
+Archive:	C:/New folder/Week 2/L01P03/output_files/Jain-5204308-L01P03.qar
+Date:		Thu Sep 24 21:22:57 2020
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/New folder/Week 2/L01P03/L01P03.qpf
+C:/New folder/Week 2/L01P03/L01P03.qsf
+C:/New folder/Week 2/L01P03/L01P03.vhd
+C:/New folder/Week 2/L01P03/incremental_db/compiled_partitions/L01P03.db_info
+c:/altera/13.0sp1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

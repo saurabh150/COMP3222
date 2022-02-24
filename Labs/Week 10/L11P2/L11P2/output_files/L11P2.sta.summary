@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'Clock'
+Slack : -7.031
+TNS   : -89.656
+
+Type  : Slow Model Setup 'y.s3_1'
+Slack : -6.877
+TNS   : -36.354
+
+Type  : Slow Model Setup 'memory_block:mem_blk|altsyncram:altsyncram_component|altsyncram_2cc1:auto_generated|q_a[0]'
+Slack : -0.422
+TNS   : -1.418
+
+Type  : Slow Model Hold 'memory_block:mem_blk|altsyncram:altsyncram_component|altsyncram_2cc1:auto_generated|q_a[0]'
+Slack : -1.991
+TNS   : -17.269
+
+Type  : Slow Model Hold 'Clock'
+Slack : -1.755
+TNS   : -2.544
+
+Type  : Slow Model Hold 'y.s3_1'
+Slack : 0.338
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Clock'
+Slack : -2.064
+TNS   : -161.535
+
+Type  : Slow Model Minimum Pulse Width 'memory_block:mem_blk|altsyncram:altsyncram_component|altsyncram_2cc1:auto_generated|q_a[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'y.s3_1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'y.s3_1'
+Slack : -2.168
+TNS   : -10.371
+
+Type  : Fast Model Setup 'Clock'
+Slack : -2.160
+TNS   : -28.277
+
+Type  : Fast Model Setup 'memory_block:mem_blk|altsyncram:altsyncram_component|altsyncram_2cc1:auto_generated|q_a[0]'
+Slack : 0.125
+TNS   : 0.000
+
+Type  : Fast Model Hold 'Clock'
+Slack : -1.379
+TNS   : -5.644
+
+Type  : Fast Model Hold 'memory_block:mem_blk|altsyncram:altsyncram_component|altsyncram_2cc1:auto_generated|q_a[0]'
+Slack : -0.947
+TNS   : -6.875
+
+Type  : Fast Model Hold 'y.s3_1'
+Slack : 0.121
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Clock'
+Slack : -2.000
+TNS   : -153.380
+
+Type  : Fast Model Minimum Pulse Width 'memory_block:mem_blk|altsyncram:altsyncram_component|altsyncram_2cc1:auto_generated|q_a[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'y.s3_1'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,19 @@
+Quartus II Archive log --	C:/Labs/Week8/Lab9P1/L9P1/Jain-5204308-L9P1sim.qarlog
+
+Archive:	C:/Labs/Week8/Lab9P1/L9P1/Jain-5204308-L9P1sim.qar
+Date:		Mon Nov 09 23:31:34 2020
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Labs/Week8/Lab9P1/L9P1/L9P1sim.qpf
+C:/Labs/Week8/Lab9P1/L9P1/L9P1sim.qsf
+C:/Labs/Week8/Lab9P1/L9P1/L9P1sim.vhd
+C:/Labs/Week8/Lab9P1/L9P1/Waveform.vwf
+C:/Labs/Week8/Lab9P1/L9P1/assignment_defaults.qdf
+C:/Labs/Week8/Lab9P1/L9P1/db/L9P1sim.sim.vwf
+C:/Labs/Week8/Lab9P1/L9P1/incremental_db/compiled_partitions/L9P1sim.db_info
+C:/Labs/Week8/Lab9P1/L9P1/simLab9.vwf
+	======= Total: 8 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

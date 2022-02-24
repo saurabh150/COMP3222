@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="L11P2">
+		<CBX_INST_ENTRY INSTANCE_NAME="|L11P2|memory_block:mem_blk|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_2cc1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

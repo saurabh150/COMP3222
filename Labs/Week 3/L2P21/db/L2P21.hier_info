@@ -1,0 +1,51 @@
+|L2P21
+V[0] => mux_2to1:m0.d0
+V[0] => mux_2to1:m0.d1
+V[1] => A[2].IN0
+V[1] => s.IN0
+V[1] => mux_2to1:m1.d0
+V[1] => mux_2to1:m1.d1
+V[2] => A[2].IN1
+V[2] => s.IN1
+V[2] => mux_2to1:m2.d0
+V[3] => s.IN1
+V[3] => mux_2to1:m3.d0
+M[0] <= mux_2to1:m0.f
+M[1] <= mux_2to1:m1.f
+M[2] <= mux_2to1:m2.f
+M[3] <= mux_2to1:m3.f
+z <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P21|mux_2to1:m0
+d0 => f.IN0
+d1 => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P21|mux_2to1:m1
+d0 => f.IN0
+d1 => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P21|mux_2to1:m2
+d0 => f.IN0
+d1 => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L2P21|mux_2to1:m3
+d0 => f.IN0
+d1 => f.IN0
+s => f.IN1
+s => f.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+

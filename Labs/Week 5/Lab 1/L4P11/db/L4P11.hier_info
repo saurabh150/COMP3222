@@ -1,0 +1,85 @@
+|L4P11
+E => T[1].IN1
+E => T_ff:T1.T
+Clk => T_ff:T1.Clk
+Clk => T_ff:T2.Clk
+Clk => T_ff:T3.Clk
+Clk => T_ff:T4.Clk
+Clk => T_ff:T5.Clk
+Clk => T_ff:T6.Clk
+Clk => T_ff:T7.Clk
+Clk => T_ff:T8.Clk
+Clearn => T_ff:T1.Clearn
+Clearn => T_ff:T2.Clearn
+Clearn => T_ff:T3.Clearn
+Clearn => T_ff:T4.Clearn
+Clearn => T_ff:T5.Clearn
+Clearn => T_ff:T6.Clearn
+Clearn => T_ff:T7.Clearn
+Clearn => T_ff:T8.Clearn
+Q[0] << T_ff:T1.Q
+Q[1] << T_ff:T2.Q
+Q[2] << T_ff:T3.Q
+Q[3] << T_ff:T4.Q
+Q[4] << T_ff:T5.Q
+Q[5] << T_ff:T6.Q
+Q[6] << T_ff:T7.Q
+Q[7] << T_ff:T8.Q
+
+
+|L4P11|T_ff:T1
+T => Q~reg0.ENA
+Clk => Q~reg0.CLK
+Clearn => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L4P11|T_ff:T2
+T => Q~reg0.ENA
+Clk => Q~reg0.CLK
+Clearn => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L4P11|T_ff:T3
+T => Q~reg0.ENA
+Clk => Q~reg0.CLK
+Clearn => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L4P11|T_ff:T4
+T => Q~reg0.ENA
+Clk => Q~reg0.CLK
+Clearn => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L4P11|T_ff:T5
+T => Q~reg0.ENA
+Clk => Q~reg0.CLK
+Clearn => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L4P11|T_ff:T6
+T => Q~reg0.ENA
+Clk => Q~reg0.CLK
+Clearn => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L4P11|T_ff:T7
+T => Q~reg0.ENA
+Clk => Q~reg0.CLK
+Clearn => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L4P11|T_ff:T8
+T => Q~reg0.ENA
+Clk => Q~reg0.CLK
+Clearn => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

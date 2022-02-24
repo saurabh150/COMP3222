@@ -1,0 +1,17 @@
+Quartus II Archive log --	C:/Labs/Week 3/L2P21/Jain-5204308-L2P21.qarlog
+
+Archive:	C:/Labs/Week 3/L2P21/Jain-5204308-L2P21.qar
+Date:		Mon Oct 05 22:05:01 2020
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Labs/Week 3/L2P21/L2P21.qpf
+C:/Labs/Week 3/L2P21/L2P21.qsf
+C:/Labs/Week 3/L2P21/L2P21.vhd
+C:/Labs/Week 3/L2P21/L2P21.vwf
+C:/Labs/Week 3/L2P21/assignment_defaults.qdf
+C:/Labs/Week 3/L2P21/incremental_db/compiled_partitions/L2P21.db_info
+	======= Total: 6 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

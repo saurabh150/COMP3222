@@ -1,0 +1,191 @@
+|L4P13
+KEY[0] => T_ff:T1.Clk
+KEY[0] => T_ff:T2.Clk
+KEY[0] => T_ff:T3.Clk
+KEY[0] => T_ff:T4.Clk
+KEY[0] => T_ff:T5.Clk
+KEY[0] => T_ff:T6.Clk
+KEY[0] => T_ff:T7.Clk
+KEY[0] => T_ff:T8.Clk
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+SW[0] => T_ff:T1.Clearn
+SW[0] => T_ff:T2.Clearn
+SW[0] => T_ff:T3.Clearn
+SW[0] => T_ff:T4.Clearn
+SW[0] => T_ff:T5.Clearn
+SW[0] => T_ff:T6.Clearn
+SW[0] => T_ff:T7.Clearn
+SW[0] => T_ff:T8.Clearn
+SW[1] => T[1].IN1
+SW[1] => T_ff:T1.T
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+HEX0[6] <= seg_7:h0.d[6]
+HEX0[5] <= seg_7:h0.d[5]
+HEX0[4] <= seg_7:h0.d[4]
+HEX0[3] <= seg_7:h0.d[3]
+HEX0[2] <= seg_7:h0.d[2]
+HEX0[1] <= seg_7:h0.d[1]
+HEX0[0] <= seg_7:h0.d[0]
+HEX1[6] <= seg_7:h1.d[6]
+HEX1[5] <= seg_7:h1.d[5]
+HEX1[4] <= seg_7:h1.d[4]
+HEX1[3] <= seg_7:h1.d[3]
+HEX1[2] <= seg_7:h1.d[2]
+HEX1[1] <= seg_7:h1.d[1]
+HEX1[0] <= seg_7:h1.d[0]
+HEX2[6] <= <VCC>
+HEX2[5] <= <VCC>
+HEX2[4] <= <VCC>
+HEX2[3] <= <VCC>
+HEX2[2] <= <VCC>
+HEX2[1] <= <VCC>
+HEX2[0] <= <VCC>
+HEX3[6] <= <VCC>
+HEX3[5] <= <VCC>
+HEX3[4] <= <VCC>
+HEX3[3] <= <VCC>
+HEX3[2] <= <VCC>
+HEX3[1] <= <VCC>
+HEX3[0] <= <VCC>
+
+
+|L4P13|T_ff:T1
+T => Q~reg0.ENA
+Clk => Q~reg0.CLK
+Clearn => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L4P13|T_ff:T2
+T => Q~reg0.ENA
+Clk => Q~reg0.CLK
+Clearn => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L4P13|T_ff:T3
+T => Q~reg0.ENA
+Clk => Q~reg0.CLK
+Clearn => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L4P13|T_ff:T4
+T => Q~reg0.ENA
+Clk => Q~reg0.CLK
+Clearn => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L4P13|T_ff:T5
+T => Q~reg0.ENA
+Clk => Q~reg0.CLK
+Clearn => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L4P13|T_ff:T6
+T => Q~reg0.ENA
+Clk => Q~reg0.CLK
+Clearn => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L4P13|T_ff:T7
+T => Q~reg0.ENA
+Clk => Q~reg0.CLK
+Clearn => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L4P13|T_ff:T8
+T => Q~reg0.ENA
+Clk => Q~reg0.CLK
+Clearn => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L4P13|seg_7:h0
+v[0] => Mux0.IN19
+v[0] => Mux1.IN19
+v[0] => Mux2.IN19
+v[0] => Mux3.IN19
+v[0] => Mux4.IN19
+v[0] => Mux5.IN19
+v[0] => Mux6.IN19
+v[1] => Mux0.IN18
+v[1] => Mux1.IN18
+v[1] => Mux2.IN18
+v[1] => Mux3.IN18
+v[1] => Mux4.IN18
+v[1] => Mux5.IN18
+v[1] => Mux6.IN18
+v[2] => Mux0.IN17
+v[2] => Mux1.IN17
+v[2] => Mux2.IN17
+v[2] => Mux3.IN17
+v[2] => Mux4.IN17
+v[2] => Mux5.IN17
+v[2] => Mux6.IN17
+v[3] => Mux0.IN16
+v[3] => Mux1.IN16
+v[3] => Mux2.IN16
+v[3] => Mux3.IN16
+v[3] => Mux4.IN16
+v[3] => Mux5.IN16
+v[3] => Mux6.IN16
+d[6] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+d[5] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+d[4] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+d[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+d[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+d[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|L4P13|seg_7:h1
+v[0] => Mux0.IN19
+v[0] => Mux1.IN19
+v[0] => Mux2.IN19
+v[0] => Mux3.IN19
+v[0] => Mux4.IN19
+v[0] => Mux5.IN19
+v[0] => Mux6.IN19
+v[1] => Mux0.IN18
+v[1] => Mux1.IN18
+v[1] => Mux2.IN18
+v[1] => Mux3.IN18
+v[1] => Mux4.IN18
+v[1] => Mux5.IN18
+v[1] => Mux6.IN18
+v[2] => Mux0.IN17
+v[2] => Mux1.IN17
+v[2] => Mux2.IN17
+v[2] => Mux3.IN17
+v[2] => Mux4.IN17
+v[2] => Mux5.IN17
+v[2] => Mux6.IN17
+v[3] => Mux0.IN16
+v[3] => Mux1.IN16
+v[3] => Mux2.IN16
+v[3] => Mux3.IN16
+v[3] => Mux4.IN16
+v[3] => Mux5.IN16
+v[3] => Mux6.IN16
+d[6] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+d[5] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+d[4] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+d[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+d[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+d[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
